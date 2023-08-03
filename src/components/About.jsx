@@ -1,5 +1,3 @@
-import aboutFabioImg1 from "../images/about/fabio-img-1.png";
-
 const About = () => {
   return (
     <>
@@ -11,14 +9,10 @@ const About = () => {
             </h2>
           </div>
           <div className="about__content">
-            <div className="about__img__left">
-              <img src={aboutFabioImg1} alt="Fabio Miguel" />
-            </div>
             <div className="about-text-right">
               <p>
                 Hello! My name is Fabio & I enjoy creating things that inhabit
-                the internet. I am a practical & effective developer completing
-                projects on schedule. I excel in creating & maintaining
+                the internet. I excel in creating & maintaining
                 responsive websites that offer a smooth user experience. My
                 speciality lies in building dynamic, interactive interfaces
                 through writing clean & optimized code. Simply, I'll take a
