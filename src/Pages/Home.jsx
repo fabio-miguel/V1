@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import About from "../components/About";
 import CallToAction from "../components/CallToAction";
 import Footer from "../components/Footer";

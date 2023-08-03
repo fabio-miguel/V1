@@ -11,7 +11,7 @@ const Projects = () => {
                 return (
                   <artcle key={id} className="project-card">
                     <div className="project-img">
-                      <a href={url} target="_blank">
+                      <a href={url} target="_blank" rel="noreferrer">
                         <img src={img} alt={name} />
                       </a>
                     </div>

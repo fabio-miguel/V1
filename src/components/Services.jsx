@@ -1,13 +1,11 @@
 import shopifyImgGrey from "../images/services/greyIcons/shopifyImgGrey.png";
 import strapitextImgGrey from "../images/services/greyIcons/strapitextImgGrey.png";
 import reactImgGrey from "../images/services/greyIcons/reactImgGrey.png";
-import cargoImgGrey from "../images/services/greyIcons/cargoImgGrey.png";
 import cssImgGrey from "../images/services/greyIcons/cssImgGrey.png";
 import htmlImgGrey from "../images/services/greyIcons/htmlImgGrey.png";
 import javascriptImgGrey from "../images/services/greyIcons/javascriptImgGrey.png";
 import remixImgGrey from "../images/services/greyIcons/remixImgGrey.png";
 import sassImgGrey from "../images/services/greyIcons/sassImgGrey.png";
-import tailwindImgGrey from "../images/services/greyIcons/tailwindImgGrey.png";
 import { Link } from "react-router-dom";
 
 const Services = () => {

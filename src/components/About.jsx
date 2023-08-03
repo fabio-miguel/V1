@@ -26,12 +26,17 @@ const About = () => {
               </p>
               <div className="links-container">
                 <div className="about-social-links">
-                  <a href="https://github.com/Fabio-miguel" target="_blank">
+                  <a
+                    href="https://github.com/Fabio-miguel"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i class="fa-brands fa-square-github"></i>
                   </a>
                   <a
                     href="https://www.linkedin.com/in/fabio-miguel-fernandes-38073327b/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i class="fa-brands fa-linkedin"></i>
                   </a>

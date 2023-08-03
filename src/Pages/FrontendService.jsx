@@ -2,7 +2,6 @@ import Footer from "../components/Footer";
 import shopifyImgGrey from "../images/services/greyIcons/shopifyImgGrey.png";
 import strapitextImgGrey from "../images/services/greyIcons/strapitextImgGrey.png";
 import reactImgGrey from "../images/services/greyIcons/reactImgGrey.png";
-import cargoImgGrey from "../images/services/greyIcons/cargoImgGrey.png";
 import cssImgGrey from "../images/services/greyIcons/cssImgGrey.png";
 import htmlImgGrey from "../images/services/greyIcons/htmlImgGrey.png";
 import javascriptImgGrey from "../images/services/greyIcons/javascriptImgGrey.png";
