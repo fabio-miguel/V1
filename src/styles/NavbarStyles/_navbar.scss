@@ -1,0 +1,141 @@
+@use "../global/" as *;
+
+nav {
+  align-items: center;
+  background-color: $background;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  display: flex;
+  font-size: 1.9rem;
+  height: 12rem;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 40px 25px 50px;
+  width: 100%;
+  z-index: 200;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    transition: all 0.8s;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .logo-container:hover {
+    cursor: pointer;
+  }
+
+  h3 {
+    font-size: 3rem;
+    color: $highlight;
+    cursor: pointer;
+    padding: 0 1rem;
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    a {
+      color: $header;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.21s;
+    }
+    a:hover {
+      color: $highlight;
+    }
+    li:last-child a {
+      background: $highlight;
+      padding: 1rem 2rem;
+      border-radius: 3rem;
+      border: 2px solid $highlight;
+    }
+    li:last-child a:hover {
+      background: transparent;
+      color: $highlight;
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+}
+
+//  mobile nav
+
+.mobile-hamb {
+  font-size: 2.8rem;
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: $highlight;
+  &:hover {
+    color: $header;
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
+  }
+}
+
+.mobile-navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background-color: $bg-white;
+  z-index: 999999;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+
+  &__close {
+    font-size: 3rem;
+    position: absolute;
+    top: 3.5rem;
+    right: 3.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $highlight;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 2.3rem;
+    gap: 3rem;
+    text-align: center;
+
+    li {
+      a {
+        text-decoration: none;
+        color: $text-black;
+        font-weight: 500;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $paragraph;
+        }
+      }
+    }
+  }
+}
+
+.open-nav {
+  left: 0;
+}

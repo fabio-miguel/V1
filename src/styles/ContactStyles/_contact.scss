@@ -1,0 +1,69 @@
+@use "../global/" as *;
+
+.call-to-action {
+  scroll-margin-top: 10vh;
+  background: $background;
+  padding: 15rem 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    color: $header;
+    font-size: 3rem;
+    display: flex;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    margin-bottom: 5rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+      gap: 3rem;
+    }
+
+    .description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 50rem;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    p {
+      color: $paragraph;
+      font-size: 1.5rem;
+      line-height: 1.75;
+      margin-bottom: 1;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.25rem;
+      }
+    }
+
+    a {
+      padding: 1.5rem 2.5rem;
+      border-radius: 3rem;
+      border: 2px solid $header;
+      color: $header;
+      text-decoration: none;
+      font-size: 1.5rem;
+      transition: all 0.3s;
+
+      @media screen and (max-width: 768px) {
+        padding: 1rem 2rem;
+        font-size: 1.25rem;
+      }
+    }
+
+    a:hover {
+      background: $paragraph;
+      border: 2px solid $paragraph;
+    }
+  }
+}

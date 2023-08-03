@@ -1,0 +1,39 @@
+@use "../global/" as *;
+
+.footer {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    padding: 2rem 0;
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $header;
+  font-size: 1.2rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+  p {
+    margin: 0;
+    span {
+      color: $highlight;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,460 @@
+@use "../global/" as *;
+
+.fullstack {
+}
+
+.fullstack-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  color: white;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 280px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.col-left {
+  .header {
+    color: $header;
+    margin-bottom: 4rem;
+
+    h2 {
+      font-size: 4.25rem;
+      font-weight: 400;
+    }
+  }
+
+  .pack-description {
+    line-height: 1.7;
+    margin-bottom: 7rem;
+
+    h4 {
+      font-size: 1.6rem;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: $paragraph;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  li {
+    font-size: 1.5rem;
+    list-style: none;
+    color: $paragraph;
+    margin-bottom: 1.5rem;
+
+    i {
+      margin-right: 1.5rem;
+    }
+
+    span {
+      font-size: 1.1rem;
+    }
+  }
+
+  .call-to-action-content {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $paragraph;
+    border-bottom: 1px solid $paragraph;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 5rem;
+
+    a {
+      padding: 1.5rem 7rem;
+      border-radius: 3rem;
+      border: 2px solid $header;
+      color: $header;
+      text-decoration: none;
+      font-size: 1.75rem;
+      letter-spacing: 0.3rem;
+      font-weight: 800;
+      transition: all 0.3s;
+      margin-bottom: 2rem;
+    }
+
+    a:hover {
+      background: $paragraph;
+      border: 2px solid $paragraph;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .call-to-action-content {
+      height: auto;
+    }
+  }
+
+  .more-services-content {
+    h4 {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    article {
+      border: 1px solid $header;
+      border-radius: 1.7rem;
+    }
+  }
+
+  .more-service-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+      color: $header;
+      font-size: 2rem;
+      margin-top: 2rem;
+
+      span {
+        font-size: 1.5rem;
+      }
+    }
+
+    h4 {
+      color: $paragraph;
+      font-size: 1.2rem;
+    }
+
+    .more-service-icons {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      width: 100%;
+      text-align: center;
+
+      .remix-img-more-services {
+        max-width: 35px;
+        max-height: 35px;
+        object-fit: contain;
+      }
+
+      .react-img-more-services {
+        max-width: 35px;
+        max-height: 35px;
+        object-fit: contain;
+      }
+
+      .javascript-img-more-services {
+        max-width: 35px;
+        max-height: 35px;
+        object-fit: contain;
+      }
+
+      .html-img-more-services {
+        max-width: 35px;
+        max-height: 35px;
+        object-fit: contain;
+      }
+
+      .css-img-more-services {
+        max-width: 35px;
+        max-height: 35px;
+        object-fit: contain;
+      }
+
+      .sass-img-more-services {
+        max-width: 35px;
+        max-height: 35px;
+        object-fit: contain;
+      }
+
+      .shopify-img-more-services {
+        max-width: 35px;
+        max-height: 35px;
+        object-fit: contain;
+      }
+
+      .cargo-img-more-services {
+        max-width: 35px;
+        max-height: 35px;
+        object-fit: contain;
+      }
+
+      .strapi-img-more-services {
+        max-width: 70px;
+        max-height: 70px;
+        object-fit: contain;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      h3 {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+
+        span {
+          font-size: 1.4rem;
+        }
+      }
+
+      h4 {
+        font-size: 1.1rem;
+      }
+
+      .more-service-icons {
+        img {
+          max-width: 25px;
+          max-height: 25px;
+        }
+      }
+    }
+  }
+}
+
+.more-service {
+  margin-bottom: 10rem;
+
+  .more-service-btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    color: $header;
+
+    a {
+      padding: 2rem 3rem;
+      border-radius: 3rem;
+      border: 2px solid $header;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      text-decoration: none;
+      color: $header;
+      transition: background-color 0.3s ease;
+      transition: border-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: $card-background;
+      border-color: $card-background;
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .more-service-btn-container {
+      a {
+        padding: 1.5rem 2.5rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.col-right {
+  .info-container {
+    height: 75rem;
+    border: solid 1px $header;
+    border-radius: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    padding: 0 2rem;
+
+    i {
+      margin-right: 1rem;
+    }
+
+    .center-info-container {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .center-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.75rem;
+      font-weight: 300;
+      color: $paragraph;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+
+      .contact-me-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25rem;
+        color: $header;
+
+        a {
+          color: $header;
+          padding: 2rem 3rem;
+          border-radius: 3rem;
+          border: 2px solid $header;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+          transition: border-color 0.3s ease;
+        }
+
+        a:hover {
+          background-color: $paragraph;
+          border-color: $paragraph;
+          cursor: pointer;
+        }
+      }
+    }
+
+    h4 {
+      font-size: 1.75rem;
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: $paragraph;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .info-container {
+      height: auto;
+    }
+  }
+}
+
+.fullstack-service-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+
+  .tech-container {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+
+    .remix-img-fullstack-service {
+      max-width: 25px;
+      max-height: 25px;
+      object-fit: contain;
+    }
+
+    .react-img-fullstack-service {
+      max-width: 25px;
+      max-height: 25px;
+      object-fit: contain;
+    }
+
+    .javascript-img-fullstack-service {
+      max-width: 25px;
+      max-height: 25px;
+      object-fit: contain;
+    }
+
+    .html-img-fullstack-service {
+      max-width: 25px;
+      max-height: 25px;
+      object-fit: contain;
+    }
+
+    .css-img-fullstack-service {
+      max-width: 25px;
+      max-height: 25px;
+      object-fit: contain;
+    }
+
+    .sass-img-fullstack-service {
+      max-width: 25px;
+      max-height: 25px;
+      object-fit: contain;
+    }
+
+    .shopify-img-fullstack-service {
+      max-width: 25px;
+      max-height: 25px;
+      object-fit: contain;
+    }
+
+    .strapi-img-fullstack-service {
+      max-width: 25px;
+      max-height: 25px;
+      object-fit: contain;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .tech-container {
+      img {
+        max-width: 20px;
+        max-height: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fullstack-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .fullstack-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .fullstack-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .call-to-action-content {
+    font-size: 1.5rem;
+  }
+
+  .more-service-info {
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+
+    .more-service-icons {
+      img {
+        max-width: 20px;
+        max-height: 20px;
+      }
+    }
+  }
+
+  .col-right {
+    .info-container {
+      height: auto;
+    }
+  }
+}

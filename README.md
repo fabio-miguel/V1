@@ -29,4 +29,3 @@ To start the development server, run the following command:
 ```
 
 The application will be available at http://localhost:3000
-# v1
