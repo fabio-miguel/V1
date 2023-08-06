@@ -114,7 +114,7 @@ const FullStackService = () => {
                     </div>
                   </div>
                   <div className="more-service-btn-container">
-                    <Link smooth to="/frontend#frontend">
+                    <Link smooth to="/frontend">
                       VIEW SERVICE
                     </Link>
                   </div>

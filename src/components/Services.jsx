@@ -49,7 +49,7 @@ const Services = () => {
                   </div>
                 </div>
                 <div className="service-btn-container">
-                  <Link smooth to="/frontend#frontend">
+                  <Link smooth to="/frontend">
                     VIEW SERVICE
                   </Link>
                 </div>
