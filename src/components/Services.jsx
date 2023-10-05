@@ -1,5 +1,4 @@
 import shopifyImgGrey from "../images/services/greyIcons/shopifyImgGrey.png";
-import strapitextImgGrey from "../images/services/greyIcons/strapitextImgGrey.png";
 import reactImgGrey from "../images/services/greyIcons/reactImgGrey.png";
 import cssImgGrey from "../images/services/greyIcons/cssImgGrey.png";
 import htmlImgGrey from "../images/services/greyIcons/htmlImgGrey.png";
