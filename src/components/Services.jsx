@@ -6,6 +6,8 @@ import htmlImgGrey from "../images/services/greyIcons/htmlImgGrey.png";
 import javascriptImgGrey from "../images/services/greyIcons/javascriptImgGrey.png";
 import remixImgGrey from "../images/services/greyIcons/remixImgGrey.png";
 import sassImgGrey from "../images/services/greyIcons/sassImgGrey.png";
+import tailwindImgGrey from "../images/services/greyIcons/tailwindImgGrey.png";
+import sanityImgGrey from "../images/services/greyIcons/sanityImgGrey.png";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -87,8 +89,8 @@ const Services = () => {
                     <img className="css-img" src={cssImgGrey} alt="css-icon" />
                     <img
                       className="sass-img"
-                      src={sassImgGrey}
-                      alt="sass-icon"
+                      src={tailwindImgGrey}
+                      alt="tailwind-icon"
                     />
                     <h4> + </h4>
                     <img
@@ -97,9 +99,9 @@ const Services = () => {
                       alt="shopify-icon"
                     />
                     <img
-                      className="strapi-img"
-                      src={strapitextImgGrey}
-                      alt="strapi-icon"
+                      className="shopify-img"
+                      src={sanityImgGrey}
+                      alt="sanity-icon"
                     />
                   </div>
                 </div>

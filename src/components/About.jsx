@@ -11,12 +11,12 @@ const About = () => {
           <div className="about__content">
             <div className="about-text-right">
               <p>
-                Hello! My name is Fabio & I enjoy creating things that inhabit
-                the internet. I excel in creating & maintaining
-                responsive websites that offer a smooth user experience. My
-                speciality lies in building dynamic, interactive interfaces
-                through writing clean & optimized code. Simply, I'll take a
-                concept & code it into creation.
+                I create things that live on the internet. I excel in creating &
+                maintaining responsive websites that offer a smooth user
+                experience. Simply, I'll take a concept & code it into creation.
+                I'm specialisised in developing creative ecommerce stores with a
+                focus on building brand identity and leveraging my knowledge of
+                ecommerce prinicples.
               </p>
               <div className="links-container">
                 <div className="about-social-links">

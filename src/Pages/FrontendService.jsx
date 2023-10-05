@@ -1,6 +1,6 @@
 import Footer from "../components/Footer";
 import shopifyImgGrey from "../images/services/greyIcons/shopifyImgGrey.png";
-import strapitextImgGrey from "../images/services/greyIcons/strapitextImgGrey.png";
+import sanityImgGrey from "../images/services/greyIcons/sanityImgGrey.png";
 import reactImgGrey from "../images/services/greyIcons/reactImgGrey.png";
 import cssImgGrey from "../images/services/greyIcons/cssImgGrey.png";
 import htmlImgGrey from "../images/services/greyIcons/htmlImgGrey.png";
@@ -127,9 +127,9 @@ const FrontendService = () => {
                         alt="shopify-icon"
                       />
                       <img
-                        className="strapi-img-more-services-frontend"
-                        src={strapitextImgGrey}
-                        alt="shopify-icon"
+                        className="shopify-img-more-services-frontend"
+                        src={sanityImgGrey}
+                        alt="sanity-icon"
                       />
                     </div>
                   </div>

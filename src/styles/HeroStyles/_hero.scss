@@ -2,19 +2,34 @@
 
 .hero {
   background: $background;
-  height: 45vh;
+
+  height: 25vh;
   position: relative;
   width: 100%;
 
   .hero-content {
     display: flex;
-    align-items: center;
+    align-items: left;
+
     justify-content: center;
     gap: 10rem;
     height: auto;
     position: relative;
     width: 100%;
     flex-direction: column;
+
+    & h1 {
+      color: $header;
+      font-size: 2rem;
+      font-weight: 800;
+      padding-bottom: 2rem;
+    }
+
+    & h2 {
+      color: $sub-header;
+      font-size: 1.7rem;
+      font-weight: 200;
+    }
 
     &__tech {
       display: flex;
@@ -23,7 +38,7 @@
       color: $paragraph;
       font-size: 4rem;
       h4 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         @media (max-width: 650px) {
           display: none;
         }
@@ -39,122 +54,107 @@
       }
     }
   }
+}
 
-  .hero-content__text {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    justify-content: center;
-    align-items: center;
+// =================
 
-    @media (max-width: 400px) {
-      text-align: center;
+.hero-content-service-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+
+  h4 {
+    @media screen and (max-width: 768px) {
+      display: none;
     }
+  }
 
-    &__title {
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+  .remix-img {
+    max-width: 25px;
+    max-height: 25px;
+    object-fit: contain;
+  }
+  .react-img {
+    max-width: 25px;
+    max-height: 25px;
+    object-fit: contain;
+  }
+  .javascript-img {
+    max-width: 25px;
+    max-height: 25px;
+    object-fit: contain;
+  }
+  .html-img {
+    max-width: 25px;
+    max-height: 25px;
+    object-fit: contain;
+  }
+  .css-img {
+    max-width: 25px;
+    max-height: 25px;
+    object-fit: contain;
+  }
+  .sass-img {
+    max-width: 25px;
+    max-height: 25px;
+    object-fit: contain;
+  }
+  .tailwind-img {
+    max-width: 25px;
+    max-height: 25px;
+    object-fit: contain;
+  }
+  .shopify-img {
+    max-width: 25px;
+    max-height: 25px;
+    object-fit: contain;
+  }
+  .cargo-img {
+    max-width: 25px;
+    max-height: 25px;
+    object-fit: contain;
+  }
+  .strapi-img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain; /* This ensures the image retains its aspect ratio */
+  }
+  .sanity-img {
+    max-width: 25px;
+    max-height: 25px;
+    object-fit: contain; /* This ensures the image retains its aspect ratio */
+  }
 
-      @media (max-width: 400px) {
-        text-align: center;
-      }
-
-      h3 {
-        font-size: 2.75rem;
-        color: $header;
-
-        @media (max-width: 1000px) {
-          font-size: 2.25rem;
-        }
-        @media (max-width: 850px) {
-          font-size: 2rem;
-        }
-        @media (max-width: 650px) {
-          font-size: 1.75rem;
-        }
-      }
-
-      h1 {
-        font-size: 5.5rem;
-        color: $header;
-
-        @media (max-width: 1000px) {
-          font-size: 4rem;
-        }
-        @media (max-width: 768px) {
-          font-size: 3.25rem;
-        }
-        @media (max-width: 50px) {
-          font-size: 2.5rem;
-        }
-
-        span {
-          font-size: 3rem;
-          color: $header;
-
-          @media (max-width: 1000px) {
-            font-size: 2.5rem;
-          }
-          @media (max-width: 850px) {
-            font-size: 2rem;
-          }
-          @media (max-width: 650px) {
-            font-size: 1.25rem;
-          }
-          @media (max-width: 550px) {
-            font-size: 1.1rem;
-          }
-        }
-      }
+  @media screen and (max-width: 768px) {
+    .remix-img,
+    .react-img,
+    .javascript-img,
+    .html-img,
+    .css-img,
+    .sass-img,
+    .shopify-img,
+    .cargo-img,
+    .strapi-img {
+      max-width: 22px;
+      max-height: 22px;
     }
+  }
 
-    &__roles {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 3.5rem;
-      color: $header;
-
-      @media (max-width: 1000px) {
-        font-size: 2.75rem;
-      }
-      @media (max-width: 850px) {
-        font-size: 2rem;
-      }
-      @media (max-width: 650px) {
-        font-size: 1.75rem;
-      }
-      @media (max-width: 550px) {
-        font-size: 1.25rem;
-      }
-      @media (max-width: 350px) {
-        font-size: 1rem;
-      }
-    }
-
-    &__location {
-      display: flex;
-      width: 50%;
-      gap: 1rem;
-      font-size: 3rem;
-      color: $header;
-
-      @media (max-width: 1000px) {
-        font-size: 2.5rem;
-      }
-      @media (max-width: 850px) {
-        font-size: 1.75rem;
-      }
-      @media (max-width: 650px) {
-        font-size: 1.25rem;
-      }
-      @media (max-width: 400px) {
-        display: none;
-      }
+  @media screen and (max-width: 300px) {
+    .remix-img,
+    .react-img,
+    .javascript-img,
+    .html-img,
+    .css-img,
+    .sass-img,
+    .shopify-img,
+    .cargo-img,
+    .strapi-img {
+      max-width: 17px;
+      max-height: 17px;
     }
   }
 }

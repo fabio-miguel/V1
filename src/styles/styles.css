@@ -195,30 +195,21 @@ nav .navbar-links li:last-child a:hover {
 
 .hero {
   background: #16161a;
-  height: 25vh;
+  border: 2px dashed red;
+  height: 45vh;
   position: relative;
   width: 100%;
 }
 .hero .hero-content {
   display: flex;
-  align-items: left;
+  align-items: center;
+  border: 2px dashed red;
   justify-content: center;
   gap: 10rem;
   height: auto;
   position: relative;
   width: 100%;
   flex-direction: column;
-}
-.hero .hero-content h1 {
-  color: #fffffe;
-  font-size: 2rem;
-  font-weight: 800;
-  padding-bottom: 2rem;
-}
-.hero .hero-content h2 {
-  color: #fffffe;
-  font-size: 1.7rem;
-  font-weight: 200;
 }
 .hero .hero-content__tech {
   display: flex;
@@ -228,7 +219,7 @@ nav .navbar-links li:last-child a:hover {
   font-size: 4rem;
 }
 .hero .hero-content__tech h4 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 @media (max-width: 650px) {
   .hero .hero-content__tech h4 {
@@ -244,101 +235,150 @@ nav .navbar-links li:last-child a:hover {
     font-size: 2.25rem;
   }
 }
-
-.hero-content-service-icons {
+.hero .hero-content__text {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
 }
-@media screen and (max-width: 768px) {
-  .hero-content-service-icons h4 {
+@media (max-width: 400px) {
+  .hero .hero-content__text {
+    text-align: center;
+  }
+}
+.hero .hero-content__text__title {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 400px) {
+  .hero .hero-content__text__title {
+    text-align: center;
+  }
+}
+.hero .hero-content__text__title h3 {
+  font-size: 2.75rem;
+  color: #fffffe;
+}
+@media (max-width: 1000px) {
+  .hero .hero-content__text__title h3 {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 850px) {
+  .hero .hero-content__text__title h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .hero .hero-content__text__title h3 {
+    font-size: 1.75rem;
+  }
+}
+.hero .hero-content__text__title h1 {
+  font-size: 5.5rem;
+  color: #fffffe;
+}
+@media (max-width: 1000px) {
+  .hero .hero-content__text__title h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero .hero-content__text__title h1 {
+    font-size: 3.25rem;
+  }
+}
+@media (max-width: 50px) {
+  .hero .hero-content__text__title h1 {
+    font-size: 2.5rem;
+  }
+}
+.hero .hero-content__text__title h1 span {
+  font-size: 3rem;
+  color: #fffffe;
+}
+@media (max-width: 1000px) {
+  .hero .hero-content__text__title h1 span {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 850px) {
+  .hero .hero-content__text__title h1 span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .hero .hero-content__text__title h1 span {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 550px) {
+  .hero .hero-content__text__title h1 span {
+    font-size: 1.1rem;
+  }
+}
+.hero .hero-content__text__roles {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  color: #fffffe;
+}
+@media (max-width: 1000px) {
+  .hero .hero-content__text__roles {
+    font-size: 2.75rem;
+  }
+}
+@media (max-width: 850px) {
+  .hero .hero-content__text__roles {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .hero .hero-content__text__roles {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 550px) {
+  .hero .hero-content__text__roles {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 350px) {
+  .hero .hero-content__text__roles {
+    font-size: 1rem;
+  }
+}
+.hero .hero-content__text__location {
+  display: flex;
+  width: 50%;
+  gap: 1rem;
+  font-size: 3rem;
+  color: #fffffe;
+}
+@media (max-width: 1000px) {
+  .hero .hero-content__text__location {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 850px) {
+  .hero .hero-content__text__location {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 650px) {
+  .hero .hero-content__text__location {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 400px) {
+  .hero .hero-content__text__location {
     display: none;
-  }
-}
-.hero-content-service-icons .remix-img {
-  max-width: 25px;
-  max-height: 25px;
-  object-fit: contain;
-}
-.hero-content-service-icons .react-img {
-  max-width: 25px;
-  max-height: 25px;
-  object-fit: contain;
-}
-.hero-content-service-icons .javascript-img {
-  max-width: 25px;
-  max-height: 25px;
-  object-fit: contain;
-}
-.hero-content-service-icons .html-img {
-  max-width: 25px;
-  max-height: 25px;
-  object-fit: contain;
-}
-.hero-content-service-icons .css-img {
-  max-width: 25px;
-  max-height: 25px;
-  object-fit: contain;
-}
-.hero-content-service-icons .sass-img {
-  max-width: 25px;
-  max-height: 25px;
-  object-fit: contain;
-}
-.hero-content-service-icons .tailwind-img {
-  max-width: 25px;
-  max-height: 25px;
-  object-fit: contain;
-}
-.hero-content-service-icons .shopify-img {
-  max-width: 25px;
-  max-height: 25px;
-  object-fit: contain;
-}
-.hero-content-service-icons .cargo-img {
-  max-width: 25px;
-  max-height: 25px;
-  object-fit: contain;
-}
-.hero-content-service-icons .strapi-img {
-  max-width: 100px;
-  max-height: 100px;
-  object-fit: contain; /* This ensures the image retains its aspect ratio */
-}
-.hero-content-service-icons .sanity-img {
-  max-width: 25px;
-  max-height: 25px;
-  object-fit: contain; /* This ensures the image retains its aspect ratio */
-}
-@media screen and (max-width: 768px) {
-  .hero-content-service-icons .remix-img,
-  .hero-content-service-icons .react-img,
-  .hero-content-service-icons .javascript-img,
-  .hero-content-service-icons .html-img,
-  .hero-content-service-icons .css-img,
-  .hero-content-service-icons .sass-img,
-  .hero-content-service-icons .shopify-img,
-  .hero-content-service-icons .cargo-img,
-  .hero-content-service-icons .strapi-img {
-    max-width: 22px;
-    max-height: 22px;
-  }
-}
-@media screen and (max-width: 300px) {
-  .hero-content-service-icons .remix-img,
-  .hero-content-service-icons .react-img,
-  .hero-content-service-icons .javascript-img,
-  .hero-content-service-icons .html-img,
-  .hero-content-service-icons .css-img,
-  .hero-content-service-icons .sass-img,
-  .hero-content-service-icons .shopify-img,
-  .hero-content-service-icons .cargo-img,
-  .hero-content-service-icons .strapi-img {
-    max-width: 17px;
-    max-height: 17px;
   }
 }
 
@@ -388,7 +428,8 @@ nav .navbar-links li:last-child a:hover {
 .about__img__left img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about__img__left::before {
   content: "";
@@ -627,47 +668,56 @@ nav .navbar-links li:last-child a:hover {
 .service-info .service-icons .remix-img {
   max-width: 50px;
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .service-info .service-icons .react-img {
   max-width: 50px;
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .service-info .service-icons .javascript-img {
   max-width: 50px;
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .service-info .service-icons .html-img {
   max-width: 50px;
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .service-info .service-icons .css-img {
   max-width: 50px;
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .service-info .service-icons .sass-img {
   max-width: 50px;
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .service-info .service-icons .shopify-img {
   max-width: 50px;
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .service-info .service-icons .cargo-img {
   max-width: 50px;
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .service-info .service-icons .strapi-img {
   max-width: 100px;
   max-height: 100px;
-  object-fit: contain; /* This ensures the image retains its aspect ratio */
+  -o-object-fit: contain;
+     object-fit: contain; /* This ensures the image retains its aspect ratio */
 }
 @media screen and (max-width: 768px) {
   .service-info .service-icons .remix-img,
@@ -931,42 +981,50 @@ nav .navbar-links li:last-child a:hover {
 .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .remix-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .react-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .javascript-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .html-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .css-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .sass-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .shopify-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .strapi-img-more-services-frontend {
   max-width: 70px;
   max-height: 70px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 768px) {
   .frontend-col-left .frontend-more-service-info h3 {
@@ -982,42 +1040,50 @@ nav .navbar-links li:last-child a:hover {
   .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .remix-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .react-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .javascript-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .html-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .css-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .sass-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .shopify-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .strapi-img-more-services-frontend {
     max-width: 40px;
     max-height: 40px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
@@ -1137,27 +1203,32 @@ nav .navbar-links li:last-child a:hover {
 .frontend-service-icons .frontend-tech-container .react-img-frontend-service {
   max-width: 25px;
   max-height: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .frontend-service-icons .frontend-tech-container .javascript-img-frontend-service {
   max-width: 25px;
   max-height: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .frontend-service-icons .frontend-tech-container .html-img-frontend-service {
   max-width: 25px;
   max-height: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .frontend-service-icons .frontend-tech-container .css-img-frontend-service {
   max-width: 25px;
   max-height: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .frontend-service-icons .frontend-tech-container .sass-img-frontend-service {
   max-width: 25px;
   max-height: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 768px) {
   .frontend-service-icons .frontend-tech-container img {
@@ -1325,47 +1396,56 @@ nav .navbar-links li:last-child a:hover {
 .col-left .more-service-info .more-service-icons .remix-img-more-services {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .col-left .more-service-info .more-service-icons .react-img-more-services {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .col-left .more-service-info .more-service-icons .javascript-img-more-services {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .col-left .more-service-info .more-service-icons .html-img-more-services {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .col-left .more-service-info .more-service-icons .css-img-more-services {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .col-left .more-service-info .more-service-icons .sass-img-more-services {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .col-left .more-service-info .more-service-icons .shopify-img-more-services {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .col-left .more-service-info .more-service-icons .cargo-img-more-services {
   max-width: 35px;
   max-height: 35px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .col-left .more-service-info .more-service-icons .strapi-img-more-services {
   max-width: 70px;
   max-height: 70px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 768px) {
   .col-left .more-service-info h3 {
@@ -1500,42 +1580,50 @@ nav .navbar-links li:last-child a:hover {
 .fullstack-service-icons .tech-container .remix-img-fullstack-service {
   max-width: 25px;
   max-height: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .fullstack-service-icons .tech-container .react-img-fullstack-service {
   max-width: 25px;
   max-height: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .fullstack-service-icons .tech-container .javascript-img-fullstack-service {
   max-width: 25px;
   max-height: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .fullstack-service-icons .tech-container .html-img-fullstack-service {
   max-width: 25px;
   max-height: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .fullstack-service-icons .tech-container .css-img-fullstack-service {
   max-width: 25px;
   max-height: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .fullstack-service-icons .tech-container .sass-img-fullstack-service {
   max-width: 25px;
   max-height: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .fullstack-service-icons .tech-container .shopify-img-fullstack-service {
   max-width: 25px;
   max-height: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .fullstack-service-icons .tech-container .strapi-img-fullstack-service {
   max-width: 25px;
   max-height: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 768px) {
   .fullstack-service-icons .tech-container img {
@@ -1599,6 +1687,4 @@ nav .navbar-links li:last-child a:hover {
 .scroll-to-top-button:hover {
   background-color: #fffffe;
   color: #16161a;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

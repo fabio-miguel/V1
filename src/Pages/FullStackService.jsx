@@ -1,13 +1,14 @@
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import Footer from "../components/Footer";
 import shopifyImgGrey from "../images/services/greyIcons/shopifyImgGrey.png";
-import strapitextImgGrey from "../images/services/greyIcons/strapitextImgGrey.png";
+import sanityImgGrey from "../images/services/greyIcons/sanityImgGrey.png";
 import reactImgGrey from "../images/services/greyIcons/reactImgGrey.png";
 import cssImgGrey from "../images/services/greyIcons/cssImgGrey.png";
 import htmlImgGrey from "../images/services/greyIcons/htmlImgGrey.png";
 import javascriptImgGrey from "../images/services/greyIcons/javascriptImgGrey.png";
 import remixImgGrey from "../images/services/greyIcons/remixImgGrey.png";
 import sassImgGrey from "../images/services/greyIcons/sassImgGrey.png";
+import tailwindImgGrey from "../images/services/greyIcons/tailwindImgGrey.png";
 import { Link } from "react-router-dom";
 
 const FullStackService = () => {
@@ -191,10 +192,10 @@ const FullStackService = () => {
                   <div className="tech-container">
                     <img
                       className="sass-img-fullstack-service"
-                      src={sassImgGrey}
-                      alt="sass-icon"
+                      src={tailwindImgGrey}
+                      alt="tailwind-icon"
                     />
-                    <p>Sass</p>
+                    <p>Tailwind</p>
                   </div>
                   <div className="tech-container">
                     <img
@@ -206,11 +207,11 @@ const FullStackService = () => {
                   </div>
                   <div className="tech-container">
                     <img
-                      className="strapi-img-fullstack-service"
-                      src={strapitextImgGrey}
-                      alt="strapi-icon"
+                      className="shopify-img-fullstack-service"
+                      src={sanityImgGrey}
+                      alt="sanity-icon"
                     />
-                    <p>Strapi</p>
+                    <p>Sanity</p>
                   </div>
                 </div>
               </div>

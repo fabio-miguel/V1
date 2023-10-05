@@ -1,5 +1,5 @@
-import orangeCarRentImg from "../images/projects/orange_car_rent_screenshot.png";
-import cryptoDomImg from "../images/projects/cryptodom-crypto-screenshot.png";
+import orangeCarRentImg from "../images/projects/grey_projects/orange_car_rent_screenshot_grey.png";
+import cryptoDomImg from "../images/projects/grey_projects/cryptodom-crypto-screenshot_grey.png";
 
 export const PROJECTS_DATA = [
   {

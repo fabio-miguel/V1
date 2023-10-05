@@ -13,6 +13,7 @@ const Projects = () => {
                     <div className="project-img">
                       <a href={url} target="_blank" rel="noreferrer">
                         <img src={img} alt={name} />
+                        <div className="overlay"></div>
                       </a>
                     </div>
                     <div className="project-text">
