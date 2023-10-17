@@ -195,7 +195,7 @@ nav .navbar-links li:last-child a:hover {
 
 .hero {
   background: #16161a;
-  height: 25vh;
+  height: 40vh;
   position: relative;
   width: 100%;
 }
@@ -928,42 +928,66 @@ nav .navbar-links li:last-child a:hover {
   width: 100%;
   text-align: center;
 }
-.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .remix-img-more-services-frontend {
+.frontend-col-left
+  .frontend-more-service-info
+  .frontend-more-service-icons
+  .remix-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .react-img-more-services-frontend {
+.frontend-col-left
+  .frontend-more-service-info
+  .frontend-more-service-icons
+  .react-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .javascript-img-more-services-frontend {
+.frontend-col-left
+  .frontend-more-service-info
+  .frontend-more-service-icons
+  .javascript-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .html-img-more-services-frontend {
+.frontend-col-left
+  .frontend-more-service-info
+  .frontend-more-service-icons
+  .html-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .css-img-more-services-frontend {
+.frontend-col-left
+  .frontend-more-service-info
+  .frontend-more-service-icons
+  .css-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .sass-img-more-services-frontend {
+.frontend-col-left
+  .frontend-more-service-info
+  .frontend-more-service-icons
+  .sass-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .shopify-img-more-services-frontend {
+.frontend-col-left
+  .frontend-more-service-info
+  .frontend-more-service-icons
+  .shopify-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .strapi-img-more-services-frontend {
+.frontend-col-left
+  .frontend-more-service-info
+  .frontend-more-service-icons
+  .strapi-img-more-services-frontend {
   max-width: 70px;
   max-height: 70px;
   object-fit: contain;
@@ -979,42 +1003,66 @@ nav .navbar-links li:last-child a:hover {
   .frontend-col-left .frontend-more-service-info h4 {
     font-size: 1.1rem;
   }
-  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .remix-img-more-services-frontend {
+  .frontend-col-left
+    .frontend-more-service-info
+    .frontend-more-service-icons
+    .remix-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .react-img-more-services-frontend {
+  .frontend-col-left
+    .frontend-more-service-info
+    .frontend-more-service-icons
+    .react-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .javascript-img-more-services-frontend {
+  .frontend-col-left
+    .frontend-more-service-info
+    .frontend-more-service-icons
+    .javascript-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .html-img-more-services-frontend {
+  .frontend-col-left
+    .frontend-more-service-info
+    .frontend-more-service-icons
+    .html-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .css-img-more-services-frontend {
+  .frontend-col-left
+    .frontend-more-service-info
+    .frontend-more-service-icons
+    .css-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .sass-img-more-services-frontend {
+  .frontend-col-left
+    .frontend-more-service-info
+    .frontend-more-service-icons
+    .sass-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .shopify-img-more-services-frontend {
+  .frontend-col-left
+    .frontend-more-service-info
+    .frontend-more-service-icons
+    .shopify-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .strapi-img-more-services-frontend {
+  .frontend-col-left
+    .frontend-more-service-info
+    .frontend-more-service-icons
+    .strapi-img-more-services-frontend {
     max-width: 40px;
     max-height: 40px;
     object-fit: contain;
@@ -1084,7 +1132,10 @@ nav .navbar-links li:last-child a:hover {
   display: flex;
   flex-direction: column;
 }
-.frontend-col-right .frontend-info-container .frontend-center-info .frontend-contact-me-btn {
+.frontend-col-right
+  .frontend-info-container
+  .frontend-center-info
+  .frontend-contact-me-btn {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -1093,7 +1144,11 @@ nav .navbar-links li:last-child a:hover {
   font-size: 1.25rem;
   color: #fffffe;
 }
-.frontend-col-right .frontend-info-container .frontend-center-info .frontend-contact-me-btn a {
+.frontend-col-right
+  .frontend-info-container
+  .frontend-center-info
+  .frontend-contact-me-btn
+  a {
   color: #fffffe;
   padding: 2rem 3rem;
   border-radius: 3rem;
@@ -1104,7 +1159,11 @@ nav .navbar-links li:last-child a:hover {
   transition: background-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
-.frontend-col-right .frontend-info-container .frontend-center-info .frontend-contact-me-btn a:hover {
+.frontend-col-right
+  .frontend-info-container
+  .frontend-center-info
+  .frontend-contact-me-btn
+  a:hover {
   background-color: #94a1b2;
   border-color: #94a1b2;
   cursor: pointer;
@@ -1139,7 +1198,9 @@ nav .navbar-links li:last-child a:hover {
   max-height: 25px;
   object-fit: contain;
 }
-.frontend-service-icons .frontend-tech-container .javascript-img-frontend-service {
+.frontend-service-icons
+  .frontend-tech-container
+  .javascript-img-frontend-service {
   max-width: 25px;
   max-height: 25px;
   object-fit: contain;
