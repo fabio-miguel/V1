@@ -61,7 +61,7 @@ const Services = () => {
                   <h3>Full-Stack Pack</h3>
                   <h4>
                     Frontend + CMS &#91; Headless CMS{" "}
-                    <span>W/ Shopify, Strapi etc</span> &#93;
+                    <span>W/ Shopify, Sanity etc</span> &#93;
                   </h4>
                   <div className="service-icons">
                     <h4>Tech Used | </h4>
