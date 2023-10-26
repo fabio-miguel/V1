@@ -1,5 +1,4 @@
 import orangeCarRentImg from "../images/projects/grey_projects/orange_car_rent_screenshot_grey.png";
-import cryptoDomImg from "../images/projects/grey_projects/cryptodom-crypto-screenshot_grey.png";
 import fullstackpackgolfimg from "../images/projects/grey_projects/fullstack_pack_core_golf_grey.png";
 import fullstackpackskateimg from "../images/projects/grey_projects/fullstack-pack-core-sktbs.vercel.app_grey.png";
 
