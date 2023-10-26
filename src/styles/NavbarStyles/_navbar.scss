@@ -50,19 +50,31 @@ nav {
       transition: all 0.21s;
     }
     a:hover {
-      color: $highlight;
+      color: blue;
+    }
+    li:first-child a:hover {
+      color: red;
+    }
+    li:nth-child(3) a:hover {
+      color: orange;
     }
     li:last-child a {
       background: $highlight;
+      color: $button-text;
       padding: 1rem 2rem;
-      border-radius: 3rem;
-      border: 2px solid $highlight;
+      // border-radius: 3rem;
+      border: 5px solid #61ff00;
     }
     li:last-child a:hover {
       background: transparent;
       color: $highlight;
+      i {
+        color: #ff4d30;
+      }
     }
-
+    li:last-child a i {
+      color: #61ff00;
+    }
     @media (max-width: 1000px) {
       display: none;
     }

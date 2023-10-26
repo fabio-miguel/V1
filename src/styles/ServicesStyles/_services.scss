@@ -3,6 +3,7 @@
 .services {
   scroll-margin-top: 10vh;
   margin-top: 10rem;
+  border-bottom: 5px solid $header;
 
   @media screen and (max-width: 768px) {
     margin-top: 5rem;
@@ -55,7 +56,7 @@
 
           a {
             padding: 2rem 3rem;
-            border-radius: 3rem;
+            // border-radius: 3rem;
             border: 2px solid $header;
             text-decoration: none;
             color: $header;
@@ -64,7 +65,7 @@
             transition: border-color 0.3s ease;
           }
           a:hover {
-            background-color: $card-background;
+            background-color: #61ff00;
             border-color: $card-background;
             cursor: pointer;
           }

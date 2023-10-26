@@ -11,8 +11,8 @@ html {
 }
 
 body {
-  background-color: #16161a;
-  font-family: "JetBrains Mono", monospace;
+  background-color: #fff;
+  font-family: "Karla", sans-serif;
   position: relative;
   padding-top: 15rem;
 }
@@ -30,7 +30,7 @@ body {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #f45d48 #ffffff;
+  scrollbar-color: #3f3c37 #ffffff;
 }
 
 /* Chrome, Edge and Safari */
@@ -54,20 +54,20 @@ body {
 
 *::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background-color: #f45d48;
+  background-color: #61ff00;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #f45d48;
+  background-color: #ff4d30;
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: #f45d48;
+  background-color: #3f3c37;
 }
 
 nav {
   align-items: center;
-  background-color: #16161a;
+  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   display: flex;
   font-size: 1.9rem;
@@ -96,7 +96,7 @@ nav .logo-container:hover {
 }
 nav h3 {
   font-size: 3rem;
-  color: #f45d48;
+  color: #3f3c37;
   cursor: pointer;
   padding: 0 1rem;
 }
@@ -106,23 +106,35 @@ nav .navbar-links {
   list-style: none;
 }
 nav .navbar-links a {
-  color: #fffffe;
+  color: #3f3c37;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.21s;
 }
 nav .navbar-links a:hover {
-  color: #f45d48;
+  color: blue;
+}
+nav .navbar-links li:first-child a:hover {
+  color: red;
+}
+nav .navbar-links li:nth-child(3) a:hover {
+  color: orange;
 }
 nav .navbar-links li:last-child a {
-  background: #f45d48;
+  background: #3f3c37;
+  color: #fff;
   padding: 1rem 2rem;
-  border-radius: 3rem;
-  border: 2px solid #f45d48;
+  border: 5px solid #61ff00;
 }
 nav .navbar-links li:last-child a:hover {
   background: transparent;
-  color: #f45d48;
+  color: #3f3c37;
+}
+nav .navbar-links li:last-child a:hover i {
+  color: #ff4d30;
+}
+nav .navbar-links li:last-child a i {
+  color: #61ff00;
 }
 @media (max-width: 1000px) {
   nav .navbar-links {
@@ -135,10 +147,10 @@ nav .navbar-links li:last-child a:hover {
   display: none;
   cursor: pointer;
   transition: all 0.3s;
-  color: #f45d48;
+  color: #3f3c37;
 }
 .mobile-hamb:hover {
-  color: #fffffe;
+  color: #3f3c37;
 }
 @media (max-width: 1000px) {
   .mobile-hamb {
@@ -169,7 +181,7 @@ nav .navbar-links li:last-child a:hover {
   transition: all 0.3s;
 }
 .mobile-navbar__close:hover {
-  color: #f45d48;
+  color: #3f3c37;
 }
 .mobile-navbar__links {
   display: flex;
@@ -186,7 +198,7 @@ nav .navbar-links li:last-child a:hover {
   transition: all 0.3s;
 }
 .mobile-navbar__links li a:hover {
-  color: #94a1b2;
+  color: #3f3c37;
 }
 
 .open-nav {
@@ -194,10 +206,11 @@ nav .navbar-links li:last-child a:hover {
 }
 
 .hero {
-  background: #16161a;
+  background: #fff;
   height: 40vh;
   position: relative;
   width: 100%;
+  border-bottom: 5px solid #3f3c37;
 }
 .hero .hero-content {
   display: flex;
@@ -210,21 +223,22 @@ nav .navbar-links li:last-child a:hover {
   flex-direction: column;
 }
 .hero .hero-content h1 {
-  color: #fffffe;
-  font-size: 2rem;
+  color: #3f3c37;
+  font-size: 24px;
   font-weight: 800;
+  letter-spacing: 0.25rem;
   padding-bottom: 2rem;
 }
 .hero .hero-content h2 {
-  color: #fffffe;
+  color: #3f3c37;
   font-size: 1.7rem;
-  font-weight: 200;
+  font-weight: 400;
 }
 .hero .hero-content__tech {
   display: flex;
   align-items: center;
   gap: 2rem;
-  color: #94a1b2;
+  color: #3f3c37;
   font-size: 4rem;
 }
 .hero .hero-content__tech h4 {
@@ -243,6 +257,74 @@ nav .navbar-links li:last-child a:hover {
   .hero .hero-content__tech {
     font-size: 2.25rem;
   }
+}
+
+.hero-content-cols {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.hero-content-right .quotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+}
+.hero-content-right .quotes .quotes-single {
+  border: 5px solid #3f3c37;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+.hero-content-right .quotes .quotes-single p {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.hero-content-right .quotes .quotes-single:hover p {
+  display: block;
+}
+@media screen and (max-width: 1200px) {
+  .hero-content-right .quotes .quotes-single {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .hero-content-right .quotes .quotes-single {
+    display: none;
+  }
+}
+
+.quote-cyan:hover {
+  background-color: cyan;
+}
+
+.quote-purple:hover {
+  background-color: rgb(214, 0, 214);
+}
+
+.quote-green:hover {
+  background-color: rgb(6, 255, 6);
+}
+
+.quote-orange:hover {
+  background-color: orangered;
+}
+
+.quote-pink:hover {
+  background-color: pink;
+}
+
+.quote-yellow:hover {
+  background-color: yellow;
 }
 
 .hero-content-service-icons {
@@ -344,11 +426,12 @@ nav .navbar-links li:last-child a:hover {
 
 .about {
   scroll-margin-top: 10vh;
-  background: #16161a;
+  background: #fff;
   padding: 15rem 0;
+  border-bottom: 5px solid #3f3c37;
 }
 .about__header {
-  color: #fffffe;
+  color: #3f3c37;
   font-size: 3rem;
   display: flex;
   width: 100%;
@@ -380,7 +463,7 @@ nav .navbar-links li:last-child a:hover {
   position: relative;
   width: 120rem;
   aspect-ratio: 1;
-  border: 0px solid #94a1b2;
+  border: 0px solid #3f3c37;
   box-shadow: 0px 2px 8px rgba(146, 146, 146, 0.932);
   border-radius: 50%;
   overflow: hidden;
@@ -397,7 +480,7 @@ nav .navbar-links li:last-child a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #94a1b2;
+  background-color: #3f3c37;
   opacity: 0.67;
   transition: opacity 0.3s ease;
 }
@@ -411,7 +494,7 @@ nav .navbar-links li:last-child a:hover {
 }
 .about .about-text-right {
   padding: 2rem;
-  background: #16161a;
+  background: #fff;
   border-radius: 1.7rem;
 }
 .about .about-text-right .links-container {
@@ -423,13 +506,13 @@ nav .navbar-links li:last-child a:hover {
   font-size: 2.25rem;
 }
 .about .about-text-right .links-container .about-social-links a {
-  color: #94a1b2;
+  color: #3f3c37;
 }
 .about .about-text-right .links-container .about-social-links a:hover {
   opacity: 0.7;
 }
 .about .about-text-right p {
-  color: #94a1b2;
+  color: #3f3c37;
   font-size: 1.9rem;
   line-height: 1.75;
   margin-bottom: 1.75rem;
@@ -442,6 +525,7 @@ nav .navbar-links li:last-child a:hover {
 
 .projects {
   scroll-margin-top: 10vh;
+  border-bottom: 5px solid #3f3c37;
 }
 
 .projects-content {
@@ -468,7 +552,7 @@ nav .navbar-links li:last-child a:hover {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  max-height: 50rem;
+  max-height: 35rem;
   padding: 2rem;
   overflow: hidden;
 }
@@ -479,7 +563,6 @@ nav .navbar-links li:last-child a:hover {
 
 .project-img {
   background-color: hsla(0, 0%, 46%, 0.2);
-  border-radius: 1.7rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
@@ -493,8 +576,8 @@ nav .navbar-links li:last-child a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fffffe;
-  font-size: 1.5rem;
+  color: #3f3c37;
+  font-size: 1rem;
 }
 @media (max-width: 800px) {
   .project-text {
@@ -514,6 +597,7 @@ nav .navbar-links li:last-child a:hover {
 .services {
   scroll-margin-top: 10vh;
   margin-top: 10rem;
+  border-bottom: 5px solid #3f3c37;
 }
 @media screen and (max-width: 768px) {
   .services {
@@ -526,7 +610,7 @@ nav .navbar-links li:last-child a:hover {
   width: 100%;
 }
 .services .services-content__title {
-  color: #fffffe;
+  color: #3f3c37;
   font-size: 1.25rem;
   display: flex;
   align-items: center;
@@ -552,7 +636,7 @@ nav .navbar-links li:last-child a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-top: 2px solid #fffffe;
+  border-top: 2px solid #3f3c37;
   max-height: 30rem;
   width: 100%;
 }
@@ -561,20 +645,19 @@ nav .navbar-links li:last-child a:hover {
   justify-content: flex-end;
   align-items: flex-end;
   font-size: 1.25rem;
-  color: #fffffe;
+  color: #3f3c37;
 }
 .services .services-content__list article .service-btn-container a {
   padding: 2rem 3rem;
-  border-radius: 3rem;
-  border: 2px solid #fffffe;
+  border: 2px solid #3f3c37;
   text-decoration: none;
-  color: #fffffe;
+  color: #3f3c37;
   margin-bottom: 2rem;
   transition: background-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
 .services .services-content__list article .service-btn-container a:hover {
-  background-color: #242629;
+  background-color: #61ff00;
   border-color: #242629;
   cursor: pointer;
 }
@@ -590,7 +673,7 @@ nav .navbar-links li:last-child a:hover {
   flex-direction: column;
 }
 .service-info h3 {
-  color: #fffffe;
+  color: #3f3c37;
   font-size: 2.75rem;
   margin-top: 2rem;
 }
@@ -603,7 +686,7 @@ nav .navbar-links li:last-child a:hover {
   }
 }
 .service-info h4 {
-  color: #94a1b2;
+  color: #3f3c37;
   font-size: 2rem;
 }
 @media screen and (max-width: 768px) {
@@ -700,7 +783,7 @@ nav .navbar-links li:last-child a:hover {
 
 .call-to-action {
   scroll-margin-top: 10vh;
-  background: #16161a;
+  background: #fff;
   padding: 15rem 0;
 }
 .call-to-action__content {
@@ -709,7 +792,7 @@ nav .navbar-links li:last-child a:hover {
   gap: 5rem;
   justify-content: center;
   align-items: center;
-  color: #fffffe;
+  color: #3f3c37;
   font-size: 3rem;
   display: flex;
   width: 100%;
@@ -735,7 +818,7 @@ nav .navbar-links li:last-child a:hover {
   }
 }
 .call-to-action__content p {
-  color: #94a1b2;
+  color: #3f3c37;
   font-size: 1.5rem;
   line-height: 1.75;
   margin-bottom: 1;
@@ -747,9 +830,9 @@ nav .navbar-links li:last-child a:hover {
 }
 .call-to-action__content a {
   padding: 1.5rem 2.5rem;
-  border-radius: 3rem;
-  border: 2px solid #fffffe;
-  color: #fffffe;
+  border: 2px solid #3f3c37;
+  color: #fff;
+  background-color: #3f3c37;
   text-decoration: none;
   font-size: 1.5rem;
   transition: all 0.3s;
@@ -761,8 +844,18 @@ nav .navbar-links li:last-child a:hover {
   }
 }
 .call-to-action__content a:hover {
-  background: #94a1b2;
-  border: 2px solid #94a1b2;
+  background: transparent;
+  border: 2px solid #3f3c37;
+  color: #3f3c37;
+}
+
+.services-gif-icon {
+  width: 15rem;
+}
+@media screen and (max-width: 769px) {
+  .services-gif-icon {
+    width: 10rem;
+  }
 }
 
 .footer {
@@ -785,7 +878,7 @@ nav .navbar-links li:last-child a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fffffe;
+  color: #3f3c37;
   font-size: 1.2rem;
 }
 @media screen and (max-width: 768px) {
@@ -797,7 +890,7 @@ nav .navbar-links li:last-child a:hover {
   margin: 0;
 }
 .footer-content p span {
-  color: #f45d48;
+  color: #3f3c37;
 }
 @media screen and (max-width: 768px) {
   .footer-content p {
@@ -809,7 +902,7 @@ nav .navbar-links li:last-child a:hover {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2.5rem;
-  color: white;
+  color: #3f3c37;
 }
 @media screen and (max-width: 768px) {
   .frontend-content {
@@ -824,7 +917,7 @@ nav .navbar-links li:last-child a:hover {
 }
 
 .frontend-col-left .frontend-header {
-  color: #fffffe;
+  color: #3f3c37;
   margin-bottom: 4rem;
 }
 .frontend-col-left .frontend-header h2 {
@@ -842,13 +935,13 @@ nav .navbar-links li:last-child a:hover {
 }
 .frontend-col-left .frontend-pack-description p {
   font-size: 1.5rem;
-  color: #94a1b2;
+  color: #3f3c37;
   margin-bottom: 1.5rem;
 }
 .frontend-col-left li {
   font-size: 1.5rem;
   list-style: none;
-  color: #94a1b2;
+  color: #3f3c37;
   margin-bottom: 1.5rem;
 }
 .frontend-col-left li i {
@@ -864,8 +957,8 @@ nav .navbar-links li:last-child a:hover {
   gap: 5rem;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #94a1b2;
-  border-bottom: 1px solid #94a1b2;
+  border-top: 1px solid #3f3c37;
+  border-bottom: 1px solid #3f3c37;
   font-size: 2rem;
   font-weight: 200;
   margin-bottom: 5rem;
@@ -873,8 +966,8 @@ nav .navbar-links li:last-child a:hover {
 .frontend-col-left .frontend-call-to-action-content a {
   padding: 1.5rem 7rem;
   border-radius: 3rem;
-  border: 2px solid #fffffe;
-  color: #fffffe;
+  border: 2px solid #3f3c37;
+  color: #3f3c37;
   text-decoration: none;
   font-size: 1.75rem;
   letter-spacing: 0.3rem;
@@ -883,8 +976,9 @@ nav .navbar-links li:last-child a:hover {
   margin-bottom: 2rem;
 }
 .frontend-col-left .frontend-call-to-action-content a:hover {
-  background: #94a1b2;
-  border: 2px solid #94a1b2;
+  background: #3f3c37;
+  color: #fff;
+  border: 2px solid #3f3c37;
 }
 @media screen and (max-width: 768px) {
   .frontend-col-left .frontend-call-to-action-content {
@@ -896,7 +990,7 @@ nav .navbar-links li:last-child a:hover {
   margin-bottom: 2rem;
 }
 .frontend-col-left .frontend-more-services-content article {
-  border: 1px solid #fffffe;
+  border: 1px solid #3f3c37;
   border-radius: 1.7rem;
 }
 .frontend-col-left .frontend-more-service-info {
@@ -907,7 +1001,7 @@ nav .navbar-links li:last-child a:hover {
   text-align: center;
 }
 .frontend-col-left .frontend-more-service-info h3 {
-  color: #fffffe;
+  color: #3f3c37;
   font-size: 2rem;
   margin-top: 2rem;
 }
@@ -915,7 +1009,7 @@ nav .navbar-links li:last-child a:hover {
   font-size: 1.5rem;
 }
 .frontend-col-left .frontend-more-service-info h4 {
-  color: #94a1b2;
+  color: #3f3c37;
   font-size: 1.2rem;
 }
 .frontend-col-left .frontend-more-service-info .frontend-more-service-icons {
@@ -928,66 +1022,42 @@ nav .navbar-links li:last-child a:hover {
   width: 100%;
   text-align: center;
 }
-.frontend-col-left
-  .frontend-more-service-info
-  .frontend-more-service-icons
-  .remix-img-more-services-frontend {
+.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .remix-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left
-  .frontend-more-service-info
-  .frontend-more-service-icons
-  .react-img-more-services-frontend {
+.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .react-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left
-  .frontend-more-service-info
-  .frontend-more-service-icons
-  .javascript-img-more-services-frontend {
+.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .javascript-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left
-  .frontend-more-service-info
-  .frontend-more-service-icons
-  .html-img-more-services-frontend {
+.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .html-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left
-  .frontend-more-service-info
-  .frontend-more-service-icons
-  .css-img-more-services-frontend {
+.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .css-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left
-  .frontend-more-service-info
-  .frontend-more-service-icons
-  .sass-img-more-services-frontend {
+.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .sass-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left
-  .frontend-more-service-info
-  .frontend-more-service-icons
-  .shopify-img-more-services-frontend {
+.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .shopify-img-more-services-frontend {
   max-width: 35px;
   max-height: 35px;
   object-fit: contain;
 }
-.frontend-col-left
-  .frontend-more-service-info
-  .frontend-more-service-icons
-  .strapi-img-more-services-frontend {
+.frontend-col-left .frontend-more-service-info .frontend-more-service-icons .strapi-img-more-services-frontend {
   max-width: 70px;
   max-height: 70px;
   object-fit: contain;
@@ -1003,66 +1073,42 @@ nav .navbar-links li:last-child a:hover {
   .frontend-col-left .frontend-more-service-info h4 {
     font-size: 1.1rem;
   }
-  .frontend-col-left
-    .frontend-more-service-info
-    .frontend-more-service-icons
-    .remix-img-more-services-frontend {
+  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .remix-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left
-    .frontend-more-service-info
-    .frontend-more-service-icons
-    .react-img-more-services-frontend {
+  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .react-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left
-    .frontend-more-service-info
-    .frontend-more-service-icons
-    .javascript-img-more-services-frontend {
+  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .javascript-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left
-    .frontend-more-service-info
-    .frontend-more-service-icons
-    .html-img-more-services-frontend {
+  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .html-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left
-    .frontend-more-service-info
-    .frontend-more-service-icons
-    .css-img-more-services-frontend {
+  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .css-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left
-    .frontend-more-service-info
-    .frontend-more-service-icons
-    .sass-img-more-services-frontend {
+  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .sass-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left
-    .frontend-more-service-info
-    .frontend-more-service-icons
-    .shopify-img-more-services-frontend {
+  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .shopify-img-more-services-frontend {
     max-width: 20px;
     max-height: 20px;
     object-fit: contain;
   }
-  .frontend-col-left
-    .frontend-more-service-info
-    .frontend-more-service-icons
-    .strapi-img-more-services-frontend {
+  .frontend-col-left .frontend-more-service-info .frontend-more-service-icons .strapi-img-more-services-frontend {
     max-width: 40px;
     max-height: 40px;
     object-fit: contain;
@@ -1079,21 +1125,21 @@ nav .navbar-links li:last-child a:hover {
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-  color: #fffffe;
+  color: #3f3c37;
 }
 .frontend-more-service .frontend-more-service-btn-container a {
   padding: 2rem 3rem;
   border-radius: 3rem;
-  border: 2px solid #fffffe;
+  border: 2px solid #3f3c37;
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-decoration: none;
-  color: #fffffe;
+  color: #3f3c37;
   transition: background-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
 .frontend-more-service .frontend-more-service-btn-container a:hover {
-  background-color: #242629;
+  background-color: #61ff00;
   border-color: #242629;
   cursor: pointer;
 }
@@ -1106,7 +1152,7 @@ nav .navbar-links li:last-child a:hover {
 
 .frontend-col-right .frontend-info-container {
   height: 75rem;
-  border: solid 1px #fffffe;
+  border: solid 1px #3f3c37;
   border-radius: 1.7rem;
   display: flex;
   flex-direction: column;
@@ -1127,45 +1173,34 @@ nav .navbar-links li:last-child a:hover {
   text-align: center;
   font-size: 1.75rem;
   font-weight: 300;
-  color: #94a1b2;
+  color: #3f3c37;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
 }
-.frontend-col-right
-  .frontend-info-container
-  .frontend-center-info
-  .frontend-contact-me-btn {
+.frontend-col-right .frontend-info-container .frontend-center-info .frontend-contact-me-btn {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-  color: #fffffe;
+  color: #3f3c37;
 }
-.frontend-col-right
-  .frontend-info-container
-  .frontend-center-info
-  .frontend-contact-me-btn
-  a {
-  color: #fffffe;
+.frontend-col-right .frontend-info-container .frontend-center-info .frontend-contact-me-btn a {
+  color: #3f3c37;
   padding: 2rem 3rem;
   border-radius: 3rem;
-  border: 2px solid #fffffe;
+  border: 2px solid #3f3c37;
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-decoration: none;
   transition: background-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
-.frontend-col-right
-  .frontend-info-container
-  .frontend-center-info
-  .frontend-contact-me-btn
-  a:hover {
-  background-color: #94a1b2;
-  border-color: #94a1b2;
+.frontend-col-right .frontend-info-container .frontend-center-info .frontend-contact-me-btn a:hover {
+  background-color: #61ff00;
+  border-color: #3f3c37;
   cursor: pointer;
 }
 .frontend-col-right .frontend-info-container h4 {
@@ -1174,7 +1209,7 @@ nav .navbar-links li:last-child a:hover {
 }
 .frontend-col-right .frontend-info-container p {
   font-size: 1.5rem;
-  color: #94a1b2;
+  color: #3f3c37;
 }
 @media screen and (max-width: 768px) {
   .frontend-col-right .frontend-info-container {
@@ -1198,9 +1233,7 @@ nav .navbar-links li:last-child a:hover {
   max-height: 25px;
   object-fit: contain;
 }
-.frontend-service-icons
-  .frontend-tech-container
-  .javascript-img-frontend-service {
+.frontend-service-icons .frontend-tech-container .javascript-img-frontend-service {
   max-width: 25px;
   max-height: 25px;
   object-fit: contain;
@@ -1264,7 +1297,7 @@ nav .navbar-links li:last-child a:hover {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2.5rem;
-  color: white;
+  color: #3f3c37;
 }
 @media screen and (max-width: 768px) {
   .fullstack-content {
@@ -1279,7 +1312,7 @@ nav .navbar-links li:last-child a:hover {
 }
 
 .col-left .header {
-  color: #fffffe;
+  color: #3f3c37;
   margin-bottom: 4rem;
 }
 .col-left .header h2 {
@@ -1297,13 +1330,13 @@ nav .navbar-links li:last-child a:hover {
 }
 .col-left .pack-description p {
   font-size: 1.5rem;
-  color: #94a1b2;
+  color: #3f3c37;
   margin-bottom: 1.5rem;
 }
 .col-left li {
   font-size: 1.5rem;
   list-style: none;
-  color: #94a1b2;
+  color: #3f3c37;
   margin-bottom: 1.5rem;
 }
 .col-left li i {
@@ -1319,8 +1352,8 @@ nav .navbar-links li:last-child a:hover {
   gap: 5rem;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #94a1b2;
-  border-bottom: 1px solid #94a1b2;
+  border-top: 1px solid #3f3c37;
+  border-bottom: 1px solid #3f3c37;
   font-size: 2rem;
   font-weight: 200;
   margin-bottom: 5rem;
@@ -1328,8 +1361,8 @@ nav .navbar-links li:last-child a:hover {
 .col-left .call-to-action-content a {
   padding: 1.5rem 7rem;
   border-radius: 3rem;
-  border: 2px solid #fffffe;
-  color: #fffffe;
+  border: 2px solid #3f3c37;
+  color: #3f3c37;
   text-decoration: none;
   font-size: 1.75rem;
   letter-spacing: 0.3rem;
@@ -1338,8 +1371,8 @@ nav .navbar-links li:last-child a:hover {
   margin-bottom: 2rem;
 }
 .col-left .call-to-action-content a:hover {
-  background: #94a1b2;
-  border: 2px solid #94a1b2;
+  background: #61ff00;
+  border: 2px solid #3f3c37;
 }
 @media screen and (max-width: 768px) {
   .col-left .call-to-action-content {
@@ -1351,7 +1384,7 @@ nav .navbar-links li:last-child a:hover {
   margin-bottom: 2rem;
 }
 .col-left .more-services-content article {
-  border: 1px solid #fffffe;
+  border: 1px solid #3f3c37;
   border-radius: 1.7rem;
 }
 .col-left .more-service-info {
@@ -1362,7 +1395,7 @@ nav .navbar-links li:last-child a:hover {
   text-align: center;
 }
 .col-left .more-service-info h3 {
-  color: #fffffe;
+  color: #3f3c37;
   font-size: 2rem;
   margin-top: 2rem;
 }
@@ -1370,7 +1403,7 @@ nav .navbar-links li:last-child a:hover {
   font-size: 1.5rem;
 }
 .col-left .more-service-info h4 {
-  color: #94a1b2;
+  color: #3f3c37;
   font-size: 1.2rem;
 }
 .col-left .more-service-info .more-service-icons {
@@ -1455,21 +1488,21 @@ nav .navbar-links li:last-child a:hover {
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-  color: #fffffe;
+  color: #3f3c37;
 }
 .more-service .more-service-btn-container a {
   padding: 2rem 3rem;
   border-radius: 3rem;
-  border: 2px solid #fffffe;
+  border: 2px solid #3f3c37;
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-decoration: none;
-  color: #fffffe;
+  color: #3f3c37;
   transition: background-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
 .more-service .more-service-btn-container a:hover {
-  background-color: #242629;
+  background-color: #61ff00;
   border-color: #242629;
   cursor: pointer;
 }
@@ -1482,7 +1515,7 @@ nav .navbar-links li:last-child a:hover {
 
 .col-right .info-container {
   height: 75rem;
-  border: solid 1px #fffffe;
+  border: solid 1px #3f3c37;
   border-radius: 1.7rem;
   display: flex;
   flex-direction: column;
@@ -1503,7 +1536,7 @@ nav .navbar-links li:last-child a:hover {
   text-align: center;
   font-size: 1.75rem;
   font-weight: 300;
-  color: #94a1b2;
+  color: #3f3c37;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -1515,13 +1548,13 @@ nav .navbar-links li:last-child a:hover {
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-  color: #fffffe;
+  color: #3f3c37;
 }
 .col-right .info-container .center-info .contact-me-btn a {
-  color: #fffffe;
+  color: #3f3c37;
   padding: 2rem 3rem;
   border-radius: 3rem;
-  border: 2px solid #fffffe;
+  border: 2px solid #3f3c37;
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-decoration: none;
@@ -1529,8 +1562,8 @@ nav .navbar-links li:last-child a:hover {
   transition: border-color 0.3s ease;
 }
 .col-right .info-container .center-info .contact-me-btn a:hover {
-  background-color: #94a1b2;
-  border-color: #94a1b2;
+  background-color: #61ff00;
+  border-color: #3f3c37;
   cursor: pointer;
 }
 .col-right .info-container h4 {
@@ -1539,7 +1572,7 @@ nav .navbar-links li:last-child a:hover {
 }
 .col-right .info-container p {
   font-size: 1.5rem;
-  color: #94a1b2;
+  color: #3f3c37;
 }
 @media screen and (max-width: 768px) {
   .col-right .info-container {
@@ -1643,7 +1676,7 @@ nav .navbar-links li:last-child a:hover {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #94a1b2;
+  background-color: #3f3c37;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -1658,8 +1691,8 @@ nav .navbar-links li:last-child a:hover {
 }
 
 .scroll-to-top-button:hover {
-  background-color: #fffffe;
-  color: #16161a;
+  background-color: #3f3c37;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */

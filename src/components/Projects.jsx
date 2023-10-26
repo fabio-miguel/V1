@@ -17,7 +17,8 @@ const Projects = () => {
                       </a>
                     </div>
                     <div className="project-text">
-                      <h3>{`${name} ${projectType}`}</h3>
+                      <h3>{`${name}`}&nbsp;</h3>
+                      <span>{`${projectType}`}</span>
                     </div>
                   </artcle>
                 );

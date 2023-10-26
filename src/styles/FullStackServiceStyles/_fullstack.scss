@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2.5rem;
-  color: white;
+  color: $header;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -89,7 +89,7 @@
     }
 
     a:hover {
-      background: $paragraph;
+      background: #61ff00;
       border: 2px solid $paragraph;
     }
   }
@@ -248,7 +248,7 @@
     }
 
     a:hover {
-      background-color: $card-background;
+      background-color: #61ff00;
       border-color: $card-background;
       cursor: pointer;
     }
@@ -317,7 +317,7 @@
         }
 
         a:hover {
-          background-color: $paragraph;
+          background-color: #61ff00;
           border-color: $paragraph;
           cursor: pointer;
         }

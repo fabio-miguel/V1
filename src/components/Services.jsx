@@ -17,7 +17,7 @@ const Services = () => {
           <div className="services-content">
             <div className="services-content__title">
               <i class="fa-regular fa-keyboard"></i>
-              <h2>WHAT I DO</h2>
+              <h2>SERVICES</h2>
             </div>
             <div className="services-content__list">
               <article className="service">

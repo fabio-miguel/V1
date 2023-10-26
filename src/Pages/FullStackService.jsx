@@ -7,8 +7,6 @@ import cssImgGrey from "../images/services/greyIcons/cssImgGrey.png";
 import htmlImgGrey from "../images/services/greyIcons/htmlImgGrey.png";
 import javascriptImgGrey from "../images/services/greyIcons/javascriptImgGrey.png";
 import remixImgGrey from "../images/services/greyIcons/remixImgGrey.png";
-import sassImgGrey from "../images/services/greyIcons/sassImgGrey.png";
-import tailwindImgGrey from "../images/services/greyIcons/tailwindImgGrey.png";
 import { Link } from "react-router-dom";
 
 const FullStackService = () => {
@@ -24,28 +22,23 @@ const FullStackService = () => {
               <div className="pack-description">
                 <h4>ABOUT THIS SERVICE</h4>
                 <p>
-                  I will create a full stack application where the user
-                  interface is created + connected to end-points where carts,
-                  payments, inventory etc can be handled and inventory managed.
-                  This service is all about creating a complete application,
-                  from the ground up, that can give you full autonomy beyond
-                  project completion.
+                  I create a full-stack application where the user interface can
+                  be dynamical managed/updated through a customised content
+                  management system &#40;CMS&#41;. This service is all about
+                  creating a complete application, from the ground up, that can
+                  give you full autonomy beyond project completion.
                 </p>
 
                 <p>
-                  At the end of the project, you will have a fully built ready
-                  website with all your products and services, blogs and so on,
-                  which you will be able to add/update as you wish. Whether it's
-                  a storefront, gallery, portfolio, blog or something else I
-                  will code it into existence.
+                  Whether it's an ecommerce storefront, gallery, portfolio, blog
+                  or combination, I can bring it to life. Upon completion, I
+                  educate my clients on how to manage their website content.
                 </p>
 
                 <p>
                   I help startups launch their web presence with a strong brand
                   identity. The website is a beskpoke design to seperate you
-                  from the typical blueprint pages that populate the web. I am
-                  focused on building beautiful user interfaces and user
-                  experiences with beautiful code. It's all about the details.
+                  from the typical template sites.
                 </p>
 
                 <h4>THE PROCESS</h4>
@@ -76,10 +69,10 @@ const FullStackService = () => {
                 </ul>
               </div>
               {/* call to action section */}
-              <div className="call-to-action-content">
+              {/* <div className="call-to-action-content">
                 <h2>Let's Collaborate</h2>
                 <a href="mailto:info@fabiomiguel.com">WORK WITH ME</a>
-              </div>
+              </div> */}
               {/* more services section */}
               <div className="more-services-content">
                 <h4>MORE SERVICES</h4>
@@ -106,11 +99,6 @@ const FullStackService = () => {
                         className="css-img-more-services"
                         src={cssImgGrey}
                         alt="css-icon"
-                      />
-                      <img
-                        className="sass-img-more-services"
-                        src={sassImgGrey}
-                        alt="sass-icon"
                       />
                     </div>
                   </div>
@@ -189,14 +177,7 @@ const FullStackService = () => {
                     />
                     <p>CSS</p>
                   </div>
-                  <div className="tech-container">
-                    <img
-                      className="sass-img-fullstack-service"
-                      src={tailwindImgGrey}
-                      alt="tailwind-icon"
-                    />
-                    <p>Tailwind</p>
-                  </div>
+
                   <div className="tech-container">
                     <img
                       className="shopify-img-fullstack-service"

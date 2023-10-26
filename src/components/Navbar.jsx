@@ -63,7 +63,7 @@ const Navbar = () => {
         <div className="logo-container">
           {isHomePage ? (
             <Link smooth to="/#hero">
-              <h3>FM*</h3>
+              <h3>FM</h3>
             </Link>
           ) : (
             <Link to="/">

@@ -48,9 +48,10 @@
 
     a {
       padding: 1.5rem 2.5rem;
-      border-radius: 3rem;
+      // border-radius: 3rem;
       border: 2px solid $header;
-      color: $header;
+      color: $button-text;
+      background-color: $highlight;
       text-decoration: none;
       font-size: 1.5rem;
       transition: all 0.3s;
@@ -62,8 +63,16 @@
     }
 
     a:hover {
-      background: $paragraph;
+      background: transparent;
       border: 2px solid $paragraph;
+      color: $header;
     }
+  }
+}
+
+.services-gif-icon {
+  width: 15rem;
+  @media screen and (max-width: 769px) {
+    width: 10rem;
   }
 }

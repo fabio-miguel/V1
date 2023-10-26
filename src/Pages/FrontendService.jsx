@@ -6,7 +6,6 @@ import cssImgGrey from "../images/services/greyIcons/cssImgGrey.png";
 import htmlImgGrey from "../images/services/greyIcons/htmlImgGrey.png";
 import javascriptImgGrey from "../images/services/greyIcons/javascriptImgGrey.png";
 import remixImgGrey from "../images/services/greyIcons/remixImgGrey.png";
-import sassImgGrey from "../images/services/greyIcons/sassImgGrey.png";
 import { Link } from "react-router-dom";
 
 const FrontendService = () => {
@@ -76,10 +75,10 @@ const FrontendService = () => {
                 </ul>
               </div>
 
-              <div className="frontend-call-to-action-content">
+              {/* <div className="frontend-call-to-action-content">
                 <h2>Let's Collaborate</h2>
                 <a href="mailto:info@fabiomiguel.com">WORK WITH ME</a>
-              </div>
+              </div> */}
 
               <div className="frontend-more-services-content">
                 <h4>MORE SERVICES</h4>
@@ -114,11 +113,6 @@ const FrontendService = () => {
                         className="css-img-more-services-frontend"
                         src={cssImgGrey}
                         alt="css-icon"
-                      />
-                      <img
-                        className="sass-img-more-services-frontend"
-                        src={sassImgGrey}
-                        alt="sass-icon"
                       />
 
                       <img
@@ -195,14 +189,6 @@ const FrontendService = () => {
                       alt="css-icon"
                     />
                     <p>CSS</p>
-                  </div>
-                  <div className="frontend-tech-container">
-                    <img
-                      className="sass-img-frontend-service"
-                      src={sassImgGrey}
-                      alt="sass-icon"
-                    />
-                    <p>Sass</p>
                   </div>
                 </div>
               </div>

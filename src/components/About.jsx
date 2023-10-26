@@ -5,18 +5,16 @@ const About = () => {
         <div className="container">
           <div className="about__header">
             <h2>
-              ABOUT ME <span>In a Nutshell</span>
+              WHAT I DO <span>In a Nutshell</span>
             </h2>
           </div>
           <div className="about__content">
             <div className="about-text-right">
               <p>
-                I create things that live on the internet. I excel in creating &
-                maintaining responsive websites that offer a smooth user
-                experience. Simply, I'll take a concept & code it into creation.
-                I'm specialisised in developing creative ecommerce stores with a
-                focus on building brand identity and leveraging my knowledge of
-                ecommerce prinicples.
+                I create things that live on the internet! I'm particularly
+                specialisised in developing creative, elevated experiences
+                whether that be ecommerce stores or marketing websites. Open
+                ears to cool ideas!
               </p>
               <div className="links-container">
                 <div className="about-social-links">
