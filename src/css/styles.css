@@ -497,7 +497,6 @@ nav .navbar-links li:last-child a i {
 }
 @media screen and (max-width: 1200px) {
   .rotating-about-image {
-    font-size: 1rem;
     width: 100px;
     height: 100px;
   }
@@ -531,7 +530,7 @@ nav .navbar-links li:last-child a i {
   text-align: center;
   transform: rotate(-30deg);
 }
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .text-about {
     font-size: 0.9rem;
   }
@@ -637,7 +636,6 @@ nav .navbar-links li:last-child a i {
 }
 .services .services-content__title {
   color: black;
-  letter-spacing: -0.5rem;
   font-size: 4rem;
   font-weight: 800;
   display: flex;
@@ -651,7 +649,7 @@ nav .navbar-links li:last-child a i {
 }
 @media screen and (max-width: 768px) {
   .services .services-content__title {
-    font-size: 1rem;
+    font-size: 3rem;
   }
   .services .services-content__title i {
     font-size: 3rem;
@@ -825,9 +823,6 @@ nav .navbar-links li:last-child a i {
     font-size: 2rem;
     gap: 3rem;
   }
-}
-.call-to-action__content h1 {
-  letter-spacing: -0.25rem;
 }
 .call-to-action__content .description {
   display: flex;
