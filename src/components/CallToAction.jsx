@@ -7,7 +7,8 @@ const CallToAction = () => {
         <div className="container">
           <div className="call-to-action__content">
             <h1>WRITE ME A LETTER</h1>
-            <h4>Coding Vibes...</h4>
+            <h4>CODING VIBES...</h4>
+
             <img
               className="services-gif-icon"
               src={hollywoodRockGif}

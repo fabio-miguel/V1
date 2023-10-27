@@ -16,9 +16,12 @@
 
     &__title {
       color: $header;
-      font-size: 1.25rem;
+      letter-spacing: -0.5rem;
+      font-size: 4rem;
+      font-weight: 800;
       display: flex;
       align-items: center;
+      justify-content: flex-end;
       gap: 1rem;
       margin-bottom: 2.5rem;
       i {
@@ -59,14 +62,16 @@
             // border-radius: 3rem;
             border: 2px solid $header;
             text-decoration: none;
-            color: $header;
+            color: $secondary;
+            background-color: $highlight;
             margin-bottom: 2rem;
             transition: background-color 0.3s ease;
             transition: border-color 0.3s ease;
           }
           a:hover {
-            background-color: #61ff00;
-            border-color: $card-background;
+            background-color: transparent;
+            border-color: black;
+            color: $highlight;
             cursor: pointer;
           }
 
@@ -118,49 +123,39 @@
     }
 
     .remix-img {
-      max-width: 50px;
-      max-height: 50px;
+      max-width: 30px;
+      max-height: 30px;
       object-fit: contain;
     }
     .react-img {
-      max-width: 50px;
-      max-height: 50px;
+      max-width: 30px;
+      max-height: 30px;
       object-fit: contain;
     }
     .javascript-img {
-      max-width: 50px;
-      max-height: 50px;
+      max-width: 30px;
+      max-height: 30px;
       object-fit: contain;
     }
     .html-img {
-      max-width: 50px;
-      max-height: 50px;
+      max-width: 30px;
+      max-height: 30px;
       object-fit: contain;
     }
     .css-img {
-      max-width: 50px;
-      max-height: 50px;
+      max-width: 30px;
+      max-height: 30px;
       object-fit: contain;
     }
     .sass-img {
-      max-width: 50px;
-      max-height: 50px;
+      max-width: 30px;
+      max-height: 30px;
       object-fit: contain;
     }
     .shopify-img {
-      max-width: 50px;
-      max-height: 50px;
+      max-width: 30px;
+      max-height: 30px;
       object-fit: contain;
-    }
-    .cargo-img {
-      max-width: 50px;
-      max-height: 50px;
-      object-fit: contain;
-    }
-    .strapi-img {
-      max-width: 100px;
-      max-height: 100px;
-      object-fit: contain; /* This ensures the image retains its aspect ratio */
     }
 
     @media screen and (max-width: 768px) {

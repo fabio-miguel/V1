@@ -3,6 +3,18 @@
 .projects {
   scroll-margin-top: 10vh;
   border-bottom: 5px solid $header;
+  h1 {
+    font-size: 5rem;
+    letter-spacing: -0.5rem;
+    font-weight: 700;
+    transform: skewY(-15deg); /* Adjust the degree as per your preference */
+    display: inline-block;
+    z-index: 5;
+    border: 5px solid black;
+    border-radius: 5rem;
+    padding: 1rem;
+    background-color: $background;
+  }
 }
 
 .projects-content {

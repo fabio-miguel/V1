@@ -34,9 +34,13 @@ nav {
 
   h3 {
     font-size: 3rem;
-    color: $highlight;
+    color: black;
     cursor: pointer;
     padding: 0 1rem;
+  }
+
+  img {
+    width: 5rem;
   }
 
   .navbar-links {
@@ -45,35 +49,38 @@ nav {
     list-style: none;
     a {
       color: $header;
-      font-weight: 600;
+      font-weight: 700;
       text-decoration: none;
       transition: all 0.21s;
     }
     a:hover {
-      color: blue;
+      color: black;
     }
     li:first-child a:hover {
-      color: red;
+      text-decoration: underline;
+    }
+    li:nth-child(2) a:hover {
+      text-decoration: underline;
     }
     li:nth-child(3) a:hover {
-      color: orange;
+      text-decoration: underline;
     }
     li:last-child a {
       background: $highlight;
-      color: $button-text;
+      color: $secondary;
       padding: 1rem 2rem;
       // border-radius: 3rem;
-      border: 5px solid #61ff00;
+      border: 5px solid black;
     }
     li:last-child a:hover {
       background: transparent;
       color: $highlight;
       i {
-        color: #ff4d30;
+        color: $highlight;
       }
     }
     li:last-child a i {
-      color: #61ff00;
+      color: $secondary;
     }
     @media (max-width: 1000px) {
       display: none;

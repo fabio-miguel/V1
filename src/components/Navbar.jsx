@@ -1,6 +1,7 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import hammer from "../images/navbar/hammer2.jpg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -63,11 +64,13 @@ const Navbar = () => {
         <div className="logo-container">
           {isHomePage ? (
             <Link smooth to="/#hero">
-              <h3>FM</h3>
+              {/* <h3>FM</h3> */}
+              <img src={hammer} alt="" />
             </Link>
           ) : (
             <Link to="/">
-              <h3>FM*</h3>
+              {/* <h3>FM*</h3> */}
+              <img src={hammer} alt="" />
             </Link>
           )}
         </div>

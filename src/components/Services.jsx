@@ -4,8 +4,6 @@ import cssImgGrey from "../images/services/greyIcons/cssImgGrey.png";
 import htmlImgGrey from "../images/services/greyIcons/htmlImgGrey.png";
 import javascriptImgGrey from "../images/services/greyIcons/javascriptImgGrey.png";
 import remixImgGrey from "../images/services/greyIcons/remixImgGrey.png";
-import sassImgGrey from "../images/services/greyIcons/sassImgGrey.png";
-import tailwindImgGrey from "../images/services/greyIcons/tailwindImgGrey.png";
 import sanityImgGrey from "../images/services/greyIcons/sanityImgGrey.png";
 import { Link } from "react-router-dom";
 
@@ -16,7 +14,6 @@ const Services = () => {
         <div className="container">
           <div className="services-content">
             <div className="services-content__title">
-              <i class="fa-regular fa-keyboard"></i>
               <h2>SERVICES</h2>
             </div>
             <div className="services-content__list">
@@ -25,7 +22,7 @@ const Services = () => {
                   <h3>Frontend FLEX</h3>
 
                   <div className="service-icons">
-                    <h4>Tech Used | </h4>
+                    <h4>Tech| </h4>
                     <img
                       className="react-img"
                       src={reactImgGrey}
@@ -42,11 +39,6 @@ const Services = () => {
                       alt="html-icon"
                     />
                     <img className="css-img" src={cssImgGrey} alt="css-icon" />
-                    <img
-                      className="sass-img"
-                      src={sassImgGrey}
-                      alt="sass-icon"
-                    />
                   </div>
                 </div>
                 <div className="service-btn-container">
@@ -64,7 +56,7 @@ const Services = () => {
                     <span>W/ Shopify, Sanity etc</span> &#93;
                   </h4>
                   <div className="service-icons">
-                    <h4>Tech Used | </h4>
+                    <h4>Tech| </h4>
                     <img
                       className="remix-img"
                       src={remixImgGrey}
@@ -86,11 +78,6 @@ const Services = () => {
                       alt="html-icon"
                     />
                     <img className="css-img" src={cssImgGrey} alt="css-icon" />
-                    <img
-                      className="sass-img"
-                      src={tailwindImgGrey}
-                      alt="tailwind-icon"
-                    />
                     <h4> + </h4>
                     <img
                       className="shopify-img"

@@ -5,6 +5,7 @@ const Projects = () => {
     <>
       <section id="projects" className="projects">
         <div className="container">
+          <h1>SOME STUFF</h1>
           <div className="projects-content">
             <div className="projects-grid">
               {PROJECTS_DATA.map(({ id, name, img, url, projectType }) => {

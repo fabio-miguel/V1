@@ -1,3 +1,5 @@
+import decagram from "../images/hero/decagram.png";
+
 const Hero = () => {
   return (
     <>
@@ -13,16 +15,13 @@ const Hero = () => {
                     Specialising in Javascript, React, RemixJS, Shopify & API
                     CMS systems
                   </h2>
-                  <h2 className="current-availability">
-                    Currently accepting 1 project starting Early Q4
-                  </h2>
                 </div>
               </div>
             </div>
 
             <div className="hero-content-right">
               <div className="quotes">
-                <div className="quotes-single quote-cyan">
+                {/* <div className="quotes-single quote-cyan">
                   <p>
                     would code for a lifetime supply of chocolate{" "}
                     <span>
@@ -69,6 +68,18 @@ const Hero = () => {
                       <i class="fa-solid fa-jar"></i>
                     </span>
                   </p>
+                </div> */}
+
+                <div className="decagram-container">
+                  <div className="decagram">
+                    <img src={decagram} alt="" className="rotating-image" />
+                    <div className="text-container">
+                      <div className="text">
+                        <p>CURRENTLY ACCEPTING</p>
+                        <p> 1 PROJECT IN Q4</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
