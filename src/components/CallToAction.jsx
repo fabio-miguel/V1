@@ -18,6 +18,7 @@ const CallToAction = () => {
               <a
                 href="https://www.youtube.com/watch?v=yhFpy9p_30o&ab_channel=WWECenaManiaTV"
                 target="_blank"
+                rel="noreferrer"
               >
                 <h2>FABIO MIGUEL</h2>
               </a>
