@@ -1,5 +1,3 @@
-import hollywoodRockGif from "../images/services/hollywood_rock.gif";
-
 const CallToAction = () => {
   return (
     <>
