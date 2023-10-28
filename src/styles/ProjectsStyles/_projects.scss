@@ -7,13 +7,17 @@
     font-size: 5rem;
     letter-spacing: -0.5rem;
     font-weight: 700;
-    transform: skewY(-15deg); /* Adjust the degree as per your preference */
+    transform: skewY(-15deg);
     display: inline-block;
     z-index: 5;
     border: 5px solid black;
     border-radius: 5rem;
     padding: 1rem;
     background-color: $background;
+    @media (max-width: 280px) {
+      font-size: 4rem;
+      margin-top: 7rem;
+    }
   }
 }
 

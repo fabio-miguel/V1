@@ -22,18 +22,44 @@
   color: $header;
   font-size: 1.2rem;
 
+  h4 {
+    background-color: black;
+    color: $secondary;
+    z-index: 20;
+  }
+
   @media screen and (max-width: 768px) {
     font-size: 1rem;
   }
 
   p {
     margin: 0;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
     span {
       color: $highlight;
     }
 
     @media screen and (max-width: 768px) {
       margin-bottom: 1rem;
+    }
+  }
+
+  .triple-h-footer-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    overflow: hidden;
+    @media screen and (max-width: 1500px) {
+      width: 50rem;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 40rem;
+    }
+    @media screen and (max-width: 669px) {
+      width: 20rem;
     }
   }
 }

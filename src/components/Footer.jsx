@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import tripleHDXGreen from "../images/contact/triple_h_dx_green_cut_out.png";
 
 const Footer = () => {
   // State to hold the current year
@@ -18,6 +19,7 @@ const Footer = () => {
       <footer id="footer" className="footer">
         <div className="container">
           <div className="footer-content">
+            <img className="triple-h-footer-img" src={tripleHDXGreen} alt="" />
             <p>
               &copy;{currentYear} FABIO MIGUEL<span>.</span>
             </p>

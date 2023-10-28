@@ -19,6 +19,7 @@
       // letter-spacing: -0.5rem;
       font-size: 4rem;
       font-weight: 800;
+      text-transform: uppercase;
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -90,7 +91,9 @@
   flex-direction: column;
   h3 {
     color: $header;
-    font-size: 2.75rem;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
     margin-top: 2rem;
     span {
       font-size: 1.5rem;
@@ -102,7 +105,7 @@
   }
   h4 {
     color: $paragraph;
-    font-size: 2rem;
+    font-size: 2.5rem;
 
     @media screen and (max-width: 768px) {
       font-size: 1.5rem;

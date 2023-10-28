@@ -9,16 +9,27 @@ const CallToAction = () => {
             <h1>WRITE ME A LETTER</h1>
             <h4>CODING VIBES...</h4>
 
-            <img
+            {/* <img
               className="services-gif-icon"
               src={hollywoodRockGif}
               alt="hollywood_rock"
-            />
+            /> */}
+            <div className="vibe-contaier">
+              <a
+                href="https://www.youtube.com/watch?v=yhFpy9p_30o&ab_channel=WWECenaManiaTV"
+                target="_blank"
+              >
+                <h2>FABIO MIGUEL</h2>
+              </a>
+            </div>
+
             <div className="description">
               <p>Let's take this to your inbox...</p>
             </div>
 
-            <a href="mailto:info@fabiomiguel.com">WORK WITH ME</a>
+            <a className="work-with-me" href="mailto:info@fabiomiguel.com">
+              WORK WITH ME
+            </a>
           </div>
         </div>
       </section>

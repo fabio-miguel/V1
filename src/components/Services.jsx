@@ -52,8 +52,8 @@ const Services = () => {
                 <div className="service-info">
                   <h3>Full-Stack Pack</h3>
                   <h4>
-                    Frontend + CMS &#91; Headless CMS{" "}
-                    <span>W/ Shopify, Sanity etc</span> &#93;
+                    Frontend + CMS &#91; Site build w/ Content Management System{" "}
+                    <span>inc. E-commerce</span> &#93;
                   </h4>
                   <div className="service-icons">
                     <h4>Tech| </h4>

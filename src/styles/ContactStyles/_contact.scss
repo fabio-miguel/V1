@@ -23,10 +23,12 @@
       gap: 3rem;
     }
 
-    // h1 {
-    //   letter-spacing: -0.25rem;
-    // }
-
+    h2 {
+      font-weight: 900;
+      padding: 0.2rem;
+      border: 5px solid black;
+      text-transform: uppercase;
+    }
     .description {
       display: flex;
       justify-content: center;
@@ -51,11 +53,19 @@
     }
 
     a {
+      text-decoration: none;
+      color: $header;
+      h2 {
+        width: 100%;
+      }
+    }
+
+    .work-with-me {
       padding: 1.5rem 2.5rem;
       border-radius: 5rem;
       border: 2px solid $header;
       color: $header;
-      background-color: transparent;
+      background-color: $secondary;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.75);
       text-decoration: none;
       font-size: 4rem;
@@ -64,6 +74,7 @@
       text-align: center;
       width: 100%;
       transition: all 0.3s;
+      z-index: 999;
 
       @media screen and (max-width: 768px) {
         padding: 1rem 2rem;
