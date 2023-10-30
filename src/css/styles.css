@@ -838,6 +838,16 @@ nav .navbar-links li:last-child a i {
   padding: 0.2rem;
   border: 5px solid black;
   text-transform: uppercase;
+  transition: 0.3s ease-in;
+}
+@media screen and (max-width: 830px) {
+  .call-to-action__content h2 {
+    font-size: 2rem;
+  }
+}
+.call-to-action__content h2:hover {
+  background-color: black;
+  color: #61ff00;
 }
 .call-to-action__content .description {
   display: flex;
@@ -897,17 +907,6 @@ nav .navbar-links li:last-child a i {
   color: black;
 }
 
-.services-gif-icon {
-  width: 30rem;
-  border: 5px solid black;
-  border-radius: 100%;
-}
-@media screen and (max-width: 769px) {
-  .services-gif-icon {
-    width: 10rem;
-  }
-}
-
 .footer {
   height: 5rem;
   display: flex;
@@ -944,7 +943,7 @@ nav .navbar-links li:last-child a i {
 .footer-content p {
   margin: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
   .footer-content p {
     display: none;
   }

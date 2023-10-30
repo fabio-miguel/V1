@@ -21,30 +21,29 @@ const FrontendService = () => {
               <div className="frontend-pack-description">
                 <h4>ABOUT THIS SERVICE</h4>
                 <p>
-                  The frontend only pack is a flexible service I provide. It's
-                  tailored to meet your design requirements however big or
-                  small. I will implement the user interface (UI) design.
-                  Whether this is coding the entire design from scratch or I go
-                  into the platform you are using and customise the design to
-                  your needs with custom code.
+                  A flexible service I provide tailored to implement design
+                  requirements for your website. Whether this is coding the
+                  entire design from scratch or I go into the platform you are
+                  using, such as Wix, Squarespace, Cargo... and customise the
+                  design to your needs with custom code.
                 </p>
 
                 <p>
-                  I can integrate custom functionality such as handeling forms,
-                  newsletters, animations etc. It all depends on your needs and
-                  what you want the user experience to be. We will discuss your
-                  needs, I provide a timeframe and we get to work. Of course,
-                  The timeframe depends on the complexity of the task and the
-                  amount of tasks. It may be only a half-day, a couple days or a
-                  week or so. Again, it all depends what you want. The time and
-                  fixed cost will be agreed before the project starts.
+                  We will discuss your needs, I provide a timeframe and we get
+                  to work. Of course, The timeframe depends on the complexity of
+                  the task and the amount of tasks. It could be a half-day, a
+                  couple days or a week or so. Again, it depends on what you
+                  want. The time and fixed cost will be agreed before the
+                  project starts.
                 </p>
 
                 <p>
-                  Entrepreneurs want their business to have a bespoke touch
-                  rather than the typical template wesbite. A memorable website
-                  is one with a unique design and user experience (UX). That's
-                  were I come in to help implement that UI/UX.
+                  Clients usually request this service when they want to
+                  integrate a piece of specific functionality to their current
+                  site or they want to adapt the template they are using to give
+                  their website more of a unique feel. This service is subject
+                  to availability as my time tends to be occupied with big
+                  projects.
                 </p>
 
                 <h4>THE PROCESS</h4>
@@ -66,8 +65,8 @@ const FrontendService = () => {
                     fixed cost
                   </li>
                   <li>
-                    <i class="fa-solid fa-caret-right"></i>Regular & relevant
-                    progress updates
+                    <i class="fa-solid fa-caret-right"></i>Relevant progress
+                    updates
                   </li>
                   <li>
                     <i class="fa-solid fa-caret-right"></i>Completion & handover

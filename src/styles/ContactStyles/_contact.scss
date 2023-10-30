@@ -28,6 +28,14 @@
       padding: 0.2rem;
       border: 5px solid black;
       text-transform: uppercase;
+      transition: 0.3s ease-in;
+      @media screen and (max-width: 830px) {
+        font-size: 2rem;
+      }
+    }
+    h2:hover {
+      background-color: $header;
+      color: $secondary;
     }
     .description {
       display: flex;
@@ -90,11 +98,11 @@
   }
 }
 
-.services-gif-icon {
-  width: 30rem;
-  border: 5px solid $header;
-  border-radius: 100%;
-  @media screen and (max-width: 769px) {
-    width: 10rem;
-  }
-}
+// .services-gif-icon {
+//   width: 30rem;
+//   border: 5px solid $header;
+//   border-radius: 100%;
+//   @media screen and (max-width: 769px) {
+//     width: 10rem;
+//   }
+// }
