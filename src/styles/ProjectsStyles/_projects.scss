@@ -12,8 +12,10 @@
     z-index: 5;
     border: 5px solid black;
     border-radius: 5rem;
-    padding: 1rem;
-    background-color: $background;
+    padding: 1.5rem;
+    background-color: $header;
+    color: $secondary;
+    margin-bottom: 1rem;
     @media (max-width: 280px) {
       font-size: 4rem;
       margin-top: 7rem;

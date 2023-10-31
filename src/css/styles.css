@@ -240,10 +240,15 @@ nav .navbar-links li:last-child a i {
 .hero .hero-content h1 {
   color: black;
   font-size: 6rem;
-  font-style: italic;
   font-weight: 800;
-  letter-spacing: 0.25rem;
   padding-bottom: 2rem;
+}
+.hero .hero-content h1 span {
+  font-style: italic;
+  background-color: black;
+  color: #61ff00;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 @media (max-width: 900px) {
   .hero .hero-content h1 {
@@ -337,7 +342,7 @@ nav .navbar-links li:last-child a i {
 }
 
 .rotating-image {
-  animation: rotate 4s linear infinite; /* You can adjust the animation duration as needed */
+  animation: rotate 10s linear infinite; /* You can adjust the animation duration as needed */
   transform-origin: center;
   width: 250px; /* Adjust the width as needed */
   height: 250px; /* Adjust the height as needed */
@@ -490,7 +495,7 @@ nav .navbar-links li:last-child a i {
 }
 
 .rotating-about-image {
-  animation: rotate 4s linear infinite; /* You can adjust the animation duration as needed */
+  animation: rotate 10s linear infinite; /* You can adjust the animation duration as needed */
   transform-origin: center;
   width: 200px; /* Adjust the width as needed */
   height: 200px; /* Adjust the height as needed */
@@ -549,8 +554,10 @@ nav .navbar-links li:last-child a i {
   z-index: 5;
   border: 5px solid black;
   border-radius: 5rem;
-  padding: 1rem;
-  background-color: #61ff00;
+  padding: 1.5rem;
+  background-color: black;
+  color: #61ff00;
+  margin-bottom: 1rem;
 }
 @media (max-width: 280px) {
   .projects h1 {

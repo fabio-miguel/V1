@@ -9,7 +9,9 @@ const Hero = () => {
             <div className="hero-content">
               <div className="hero-content__text">
                 <div className="hero-content__text__title">
-                  <h1>FABIO MIGUEL</h1>
+                  <h1>
+                    FABIO <span> MIGUEL</span>
+                  </h1>
                   <h2>Creative Web Engineer</h2>
                   <h2>
                     Specialising in Javascript, React, RemixJS, Shopify & API
