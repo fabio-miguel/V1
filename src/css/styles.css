@@ -142,6 +142,7 @@ nav .color-mode-btn {
 }
 nav .color-mode-btn img {
   width: 100%;
+  animation: sway 2s ease-in-out infinite;
 }
 nav .color-mode-btn p {
   font-size: 1rem;
@@ -264,6 +265,17 @@ nav .navbar-links li:last-child a i {
   border-radius: 100%;
 }
 
+@keyframes sway {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .hero {
   background: var(--background);
   height: 30vh;
