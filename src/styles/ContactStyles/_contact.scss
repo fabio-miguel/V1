@@ -2,7 +2,7 @@
 
 .call-to-action {
   scroll-margin-top: 10vh;
-  background: $background;
+  background: var(--background);
   padding: 15rem 0;
 
   &__content {
@@ -11,7 +11,7 @@
     gap: 5rem;
     justify-content: center;
     align-items: center;
-    color: $header;
+    color: var(--header);
     font-size: 3rem;
     display: flex;
     width: 100%;
@@ -34,8 +34,8 @@
       }
     }
     h2:hover {
-      background-color: $header;
-      color: $secondary;
+      background-color: var(--accents);
+      color: var(--secondary);
     }
     .description {
       display: flex;
@@ -50,7 +50,7 @@
     }
 
     p {
-      color: $paragraph;
+      color: var(--paragraph);
       font-size: 1.5rem;
       line-height: 1.75;
       margin-bottom: 1;
@@ -62,7 +62,7 @@
 
     a {
       text-decoration: none;
-      color: $header;
+      color: var(--header);
       h2 {
         width: 100%;
       }
@@ -71,9 +71,9 @@
     .work-with-me {
       padding: 1.5rem 2.5rem;
       border-radius: 5rem;
-      border: 2px solid $header;
-      color: $header;
-      background-color: $secondary;
+      border: 2px solid var(--header);
+      color: var(--header);
+      background-color: var(--secondary);
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.75);
       text-decoration: none;
       font-size: 4rem;
@@ -92,8 +92,8 @@
 
     a:hover {
       background: transparent;
-      border: 2px solid $paragraph;
-      color: $header;
+      border: 2px solid var(--paragraph);
+      color: var(--header);
     }
   }
 }

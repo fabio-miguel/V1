@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: $background;
+  background-color: var(--background);
   font-family: $titles-font;
   position: relative;
   padding-top: 15rem;
@@ -43,7 +43,7 @@ body {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: $highlight #ffffff;
+  scrollbar-color: var(--highlight) #ffffff;
 }
 
 /* Chrome, Edge and Safari */

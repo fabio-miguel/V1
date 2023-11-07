@@ -3,7 +3,7 @@
 .services {
   scroll-margin-top: 10vh;
   margin-top: 10rem;
-  border-bottom: 5px solid $header;
+  border-bottom: 5px solid var(--header);
 
   @media screen and (max-width: 768px) {
     margin-top: 5rem;
@@ -15,7 +15,7 @@
     width: 100%;
 
     &__title {
-      color: $header;
+      color: var(--header);
       // letter-spacing: -0.5rem;
       font-size: 4rem;
       font-weight: 800;
@@ -46,7 +46,7 @@
         flex-direction: column;
         justify-content: space-between;
 
-        border-top: 2px solid $header;
+        border-top: 2px solid var(--header);
 
         max-height: 30rem;
         width: 100%;
@@ -56,15 +56,15 @@
           justify-content: flex-end;
           align-items: flex-end;
           font-size: 1.25rem;
-          color: $header;
+          color: var(--header);
 
           a {
             padding: 2rem 3rem;
             // border-radius: 3rem;
-            border: 2px solid $header;
+            border: 2px solid var(--header);
             text-decoration: none;
-            color: $secondary;
-            background-color: $highlight;
+            color: var(--secondary);
+            background-color: var(--accents);
             margin-bottom: 2rem;
             transition: background-color 0.3s ease;
             transition: border-color 0.3s ease;
@@ -72,7 +72,7 @@
           a:hover {
             background-color: transparent;
             border-color: black;
-            color: $highlight;
+            color: var(--hover-text);
             cursor: pointer;
           }
 
@@ -90,7 +90,7 @@
   display: flex;
   flex-direction: column;
   h3 {
-    color: $header;
+    color: var(--header);
     font-size: 3rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -104,7 +104,7 @@
     }
   }
   h4 {
-    color: $paragraph;
+    color: var(--paragraph);
     font-size: 2.5rem;
 
     @media screen and (max-width: 768px) {

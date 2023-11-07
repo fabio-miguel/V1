@@ -19,12 +19,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: $header;
+  color: var(--header);
   font-size: 1.2rem;
 
   h4 {
-    background-color: black;
-    color: $secondary;
+    background-color: var(--accents);
+    color: var(--secondary);
     z-index: 20;
   }
 
@@ -34,11 +34,13 @@
 
   p {
     margin: 0;
+    color: #fff;
+    z-index: 10;
     @media screen and (max-width: 1250px) {
       display: none;
     }
     span {
-      color: $highlight;
+      color: var(--highlight);
     }
 
     @media screen and (max-width: 768px) {
@@ -47,6 +49,7 @@
   }
 
   .triple-h-footer-img {
+    display: none;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -61,5 +64,26 @@
     @media screen and (max-width: 669px) {
       width: 20rem;
     }
+  }
+  .goku-black-footer-img {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    overflow: hidden;
+    @media screen and (max-width: 1500px) {
+      width: 50rem;
+    }
+    @media screen and (max-width: 1300px) {
+      width: 20rem;
+    }
+  }
+  .active-image {
+    display: block; /* Display the image */
+  }
+
+  .inactive-image {
+    display: none; /* Hide the image */
   }
 }

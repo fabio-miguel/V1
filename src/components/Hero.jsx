@@ -1,6 +1,7 @@
 import decagram from "../images/hero/decagram.png";
-
+import { useToggle } from "../components/ToggleContext";
 const Hero = () => {
+  const { isToggled } = useToggle();
   return (
     <>
       <section id="hero" className="hero">
@@ -23,62 +24,15 @@ const Hero = () => {
 
             <div className="hero-content-right">
               <div className="quotes">
-                {/* <div className="quotes-single quote-cyan">
-                  <p>
-                    would code for a lifetime supply of chocolate{" "}
-                    <span>
-                      <i class="fa-solid fa-cookie"></i>
-                    </span>
-                  </p>
-                </div>
-                <div className="quotes-single quote-purple">
-                  <p>
-                    legend has it that I invented the internet{" "}
-                    <span>
-                      <i class="fa-solid fa-hat-wizard"></i>
-                    </span>
-                  </p>
-                </div>
-                <div className="quotes-single quote-green">
-                  <p>
-                    would give your dog all my attention{" "}
-                    <span>
-                      <i class="fa-solid fa-dog"></i>
-                    </span>
-                  </p>
-                </div>
-                <div className="quotes-single quote-orange">
-                  <p>
-                    my obsession with organisation is out of hand{" "}
-                    <span>
-                      <i class="fa-solid fa-folder"></i>
-                    </span>
-                  </p>
-                </div>
-                <div className="quotes-single quote-pink">
-                  <p>
-                    fantasy premier league is taken very seriosly{" "}
-                    <span>
-                      <i class="fa-solid fa-futbol"></i>
-                    </span>
-                  </p>
-                </div>
-                <div className="quotes-single quote-yellow">
-                  <p>
-                    i've got a jar of dirt... because I have so many plants{" "}
-                    <span>
-                      <i class="fa-solid fa-jar"></i>
-                    </span>
-                  </p>
-                </div> */}
-
                 <div className="decagram-container">
-                  <div className="decagram">
+                  <div
+                    className={`decagram ${isToggled ? "hide-decagram" : ""}`}
+                  >
                     <img src={decagram} alt="" className="rotating-image" />
                     <div className="text-container">
                       <div className="text">
                         <p>CURRENTLY ACCEPTING</p>
-                        <p> 1 PROJECT IN Q4</p>
+                        <p>1 PROJECT IN Q4</p>
                       </div>
                     </div>
                   </div>

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import tripleHDXGreen from "../images/contact/triple_h_dx_green_cut_out.png";
+import gokuBlack from "../images/contact/goku_black.png";
 import { useLocation } from "react-router-dom";
+import { useToggle } from "../components/ToggleContext";
 
 const Footer = () => {
   // Get the current location
@@ -21,17 +23,30 @@ const Footer = () => {
     getCurrentYear();
   }, []);
 
+  const { isToggled } = useToggle();
+
   return (
     <>
       <footer id="footer" className="footer">
         <div className="container">
           <div className="footer-content">
             {location.pathname === homePagePath && (
-              <img
-                className="triple-h-footer-img"
-                src={tripleHDXGreen}
-                alt=""
-              />
+              <>
+                <img
+                  className={`triple-h-footer-img ${
+                    isToggled ? "inactive-image" : "active-image"
+                  }`}
+                  src={tripleHDXGreen}
+                  alt="triple h dx"
+                />
+                <img
+                  className={`goku-black-footer-img ${
+                    isToggled ? "active-image" : "inactive-image"
+                  }`}
+                  src={gokuBlack}
+                  alt="goku black"
+                />
+              </>
             )}
             <p>
               &copy;{currentYear} FABIO MIGUEL<span>.</span>

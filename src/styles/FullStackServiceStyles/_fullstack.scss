@@ -1,13 +1,10 @@
 @use "../global/" as *;
 
-.fullstack {
-}
-
 .fullstack-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2.5rem;
-  color: $header;
+  color: var(--header);
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -21,7 +18,7 @@
 
 .col-left {
   .header {
-    color: $header;
+    color: var(--header);
     margin-bottom: 4rem;
 
     h2 {
@@ -42,7 +39,7 @@
 
     p {
       font-size: 1.5rem;
-      color: $paragraph;
+      color: var(--paragraph);
       margin-bottom: 1.5rem;
     }
   }
@@ -50,7 +47,7 @@
   li {
     font-size: 1.5rem;
     list-style: none;
-    color: $paragraph;
+    color: var(--paragraph);
     margin-bottom: 1.5rem;
 
     i {
@@ -69,8 +66,8 @@
     gap: 5rem;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid $paragraph;
-    border-bottom: 1px solid $paragraph;
+    border-top: 1px solid var(--paragraph);
+    border-bottom: 1px solid var(--paragraph);
     font-size: 2rem;
     font-weight: 200;
     margin-bottom: 5rem;
@@ -78,8 +75,8 @@
     a {
       padding: 1.5rem 7rem;
       border-radius: 3rem;
-      border: 2px solid $header;
-      color: $header;
+      border: 2px solid var(--header);
+      color: var(--header);
       text-decoration: none;
       font-size: 1.75rem;
       letter-spacing: 0.3rem;
@@ -89,8 +86,9 @@
     }
 
     a:hover {
-      background: #61ff00;
-      border: 2px solid $paragraph;
+      background: var(--highlight);
+      color: #fff;
+      border: 2px solid var(--paragraph);
     }
   }
 
@@ -107,7 +105,7 @@
     }
 
     article {
-      border: 1px solid $header;
+      border: 1px solid var(--header);
       border-radius: 1.7rem;
     }
   }
@@ -120,7 +118,7 @@
     text-align: center;
 
     h3 {
-      color: $header;
+      color: var(--header);
       font-size: 2rem;
       margin-top: 2rem;
 
@@ -130,7 +128,7 @@
     }
 
     h4 {
-      color: $paragraph;
+      color: var(--paragraph);
       font-size: 1.2rem;
     }
 
@@ -233,23 +231,23 @@
     justify-content: center;
     align-items: center;
     font-size: 1.25rem;
-    color: $header;
+    color: var(--header);
 
     a {
       padding: 2rem 3rem;
       border-radius: 3rem;
-      border: 2px solid $header;
+      border: 2px solid var(--header);
       margin-top: 2rem;
       margin-bottom: 2rem;
       text-decoration: none;
-      color: $header;
+      color: var(--header);
       transition: background-color 0.3s ease;
       transition: border-color 0.3s ease;
     }
 
     a:hover {
-      background-color: #61ff00;
-      border-color: $card-background;
+      background-color: var(--secondary);
+      border-color: var(--paragraph);
       cursor: pointer;
     }
   }
@@ -267,7 +265,7 @@
 .col-right {
   .info-container {
     height: 75rem;
-    border: solid 1px $header;
+    border: solid 1px var(--header);
     border-radius: 1.7rem;
     display: flex;
     flex-direction: column;
@@ -290,7 +288,7 @@
       text-align: center;
       font-size: 1.75rem;
       font-weight: 300;
-      color: $paragraph;
+      color: var(--paragraph);
       margin-top: 2rem;
       display: flex;
       flex-direction: column;
@@ -302,13 +300,13 @@
         justify-content: center;
         align-items: center;
         font-size: 1.25rem;
-        color: $header;
+        color: var(--header);
 
         a {
-          color: $header;
+          color: var(--header);
           padding: 2rem 3rem;
           border-radius: 3rem;
-          border: 2px solid $header;
+          border: 2px solid var(--header);
           margin-top: 2rem;
           margin-bottom: 2rem;
           text-decoration: none;
@@ -317,8 +315,8 @@
         }
 
         a:hover {
-          background-color: #61ff00;
-          border-color: $paragraph;
+          background-color: var(--secondary);
+          border-color: var(--paragraph);
           cursor: pointer;
         }
       }
@@ -331,7 +329,7 @@
 
     p {
       font-size: 1.5rem;
-      color: $paragraph;
+      color: var(--paragraph);
     }
   }
 

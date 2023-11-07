@@ -1,3 +1,21 @@
+:root {
+  --background: #61ff00;
+  --bg-white: #fff;
+  --header: black;
+  --sub-header: black;
+  --paragraph: black;
+  --button-bg: #61ff00;
+  --button-text: black;
+  --link: #f9bc60;
+  --card-background: #242629;
+  --card-header: #fffffe;
+  --card-paragraph: #94a1b2;
+  --highlight: black;
+  --secondary: #61ff00;
+  --accents: black;
+  --hover-text: black;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +29,7 @@ html {
 }
 
 body {
-  background-color: #61ff00;
+  background-color: var(--background);
   font-family: "Karla", sans-serif;
   position: relative;
   padding-top: 15rem;
@@ -30,7 +48,7 @@ body {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: black #ffffff;
+  scrollbar-color: var(--highlight) #ffffff;
 }
 
 /* Chrome, Edge and Safari */
@@ -67,7 +85,7 @@ body {
 
 nav {
   align-items: center;
-  background-color: #61ff00;
+  background-color: var(--background);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   display: flex;
   font-size: 1.9rem;
@@ -84,6 +102,8 @@ nav {
 nav .logo-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  border: 4px solid var(--accents);
   width: 75px;
   height: 75px;
   transition: all 0.8s;
@@ -103,19 +123,44 @@ nav h3 {
 nav img {
   width: 5rem;
 }
+nav .color-mode-btn-container {
+  position: absolute;
+  top: -4%;
+  left: 30%;
+  width: 10rem;
+}
+nav .color-mode-btn {
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+nav .color-mode-btn img {
+  width: 100%;
+}
+nav .color-mode-btn p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accents);
+}
 nav .navbar-links {
   display: flex;
   gap: 2.5rem;
   list-style: none;
 }
 nav .navbar-links a {
-  color: black;
+  color: var(--header);
   font-weight: 700;
   text-decoration: none;
   transition: all 0.21s;
 }
 nav .navbar-links a:hover {
-  color: black;
+  color: var(--hover-text);
 }
 nav .navbar-links li:first-child a:hover {
   text-decoration: underline;
@@ -127,20 +172,20 @@ nav .navbar-links li:nth-child(3) a:hover {
   text-decoration: underline;
 }
 nav .navbar-links li:last-child a {
-  background: black;
-  color: #61ff00;
+  background: var(--accents);
+  color: var(--secondary);
   padding: 1rem 2rem;
   border: 5px solid black;
 }
 nav .navbar-links li:last-child a:hover {
   background: transparent;
-  color: black;
+  color: var(--accents);
 }
 nav .navbar-links li:last-child a:hover i {
-  color: black;
+  color: var(--accents);
 }
 nav .navbar-links li:last-child a i {
-  color: #61ff00;
+  color: var(--secondary);
 }
 @media (max-width: 1000px) {
   nav .navbar-links {
@@ -153,10 +198,10 @@ nav .navbar-links li:last-child a i {
   display: none;
   cursor: pointer;
   transition: all 0.3s;
-  color: black;
+  color: var(--accents);
 }
 .mobile-hamb:hover {
-  color: black;
+  color: var(--header);
 }
 @media (max-width: 1000px) {
   .mobile-hamb {
@@ -172,7 +217,7 @@ nav .navbar-links li:last-child a i {
   position: fixed;
   top: 0;
   left: -100%;
-  background-color: #ffffff;
+  background-color: var(--bg-white);
   z-index: 999999;
   justify-content: center;
   align-items: center;
@@ -187,7 +232,7 @@ nav .navbar-links li:last-child a i {
   transition: all 0.3s;
 }
 .mobile-navbar__close:hover {
-  color: black;
+  color: var(--secondary);
 }
 .mobile-navbar__links {
   display: flex;
@@ -199,24 +244,32 @@ nav .navbar-links li:last-child a i {
 }
 .mobile-navbar__links li a {
   text-decoration: none;
-  color: #010103;
+  color: var(--text-black);
   font-weight: 500;
   transition: all 0.3s;
 }
 .mobile-navbar__links li a:hover {
-  color: black;
+  color: var(--hover-text);
 }
 
 .open-nav {
   left: 0;
 }
 
+.pink-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accents);
+  border-radius: 100%;
+}
+
 .hero {
-  background: #61ff00;
+  background: var(--background);
   height: 30vh;
   position: relative;
   width: 100%;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--header);
 }
 @media (max-width: 900px) {
   .hero {
@@ -238,15 +291,15 @@ nav .navbar-links li:last-child a i {
   flex-direction: column;
 }
 .hero .hero-content h1 {
-  color: black;
+  color: var(--header);
   font-size: 6rem;
   font-weight: 800;
   padding-bottom: 2rem;
 }
 .hero .hero-content h1 span {
   font-style: italic;
-  background-color: black;
-  color: #61ff00;
+  background-color: var(--accents);
+  color: var(--secondary);
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -256,7 +309,7 @@ nav .navbar-links li:last-child a i {
   }
 }
 .hero .hero-content h2 {
-  color: black;
+  color: var(--sub-header);
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -269,7 +322,7 @@ nav .navbar-links li:last-child a i {
   display: flex;
   align-items: center;
   gap: 2rem;
-  color: black;
+  color: var(--paragraph);
   font-size: 4rem;
 }
 .hero .hero-content__tech h4 {
@@ -310,7 +363,7 @@ nav .navbar-links li:last-child a i {
   width: 100%;
 }
 .hero-content-right .quotes .quotes-single {
-  border: 5px solid black;
+  border: 5px solid var(--header);
   font-size: 1.5rem;
   padding: 1.5rem;
   position: relative;
@@ -377,21 +430,25 @@ nav .navbar-links li:last-child a i {
 
 .text {
   /* Add styles for the text as needed */
-  color: #61ff00;
+  color: var(--card-paragraph);
   font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
   transform: rotate(30deg);
 }
 
+.hide-decagram {
+  display: none;
+}
+
 .about {
   scroll-margin-top: 10vh;
-  background: #61ff00;
+  background: var(--background);
   padding: 15rem 0;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--header);
 }
 .about__header {
-  color: black;
+  color: var(--header);
   font-size: 4rem;
   font-weight: 800;
   display: flex;
@@ -429,7 +486,7 @@ nav .navbar-links li:last-child a i {
   position: relative;
   width: 120rem;
   aspect-ratio: 1;
-  border: 0px solid black;
+  border: 0px solid var(--paragraph);
   box-shadow: 0px 2px 8px rgba(146, 146, 146, 0.932);
   border-radius: 50%;
   overflow: hidden;
@@ -446,7 +503,7 @@ nav .navbar-links li:last-child a i {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: var(--paragraph);
   opacity: 0.67;
   transition: opacity 0.3s ease;
 }
@@ -460,7 +517,7 @@ nav .navbar-links li:last-child a i {
 }
 .about .about-text-right {
   padding: 2rem;
-  background: #61ff00;
+  background: var(--background);
   border-radius: 1.7rem;
 }
 .about .about-text-right .links-container {
@@ -472,13 +529,13 @@ nav .navbar-links li:last-child a i {
   font-size: 2.25rem;
 }
 .about .about-text-right .links-container .about-social-links a {
-  color: black;
+  color: var(--paragraph);
 }
 .about .about-text-right .links-container .about-social-links a:hover {
   opacity: 0.7;
 }
 .about .about-text-right p {
-  color: black;
+  color: var(--paragraph);
   font-size: 3rem;
   line-height: 1.75;
   margin-bottom: 1.75rem;
@@ -529,7 +586,7 @@ nav .navbar-links li:last-child a i {
 
 .text-about {
   /* Add styles for the text as needed */
-  color: #61ff00;
+  color: var(--card-paragraph);
   font-size: 1.15rem;
   text-transform: uppercase;
   text-align: center;
@@ -543,7 +600,7 @@ nav .navbar-links li:last-child a i {
 
 .projects {
   scroll-margin-top: 10vh;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--header);
 }
 .projects h1 {
   font-size: 5rem;
@@ -555,8 +612,8 @@ nav .navbar-links li:last-child a i {
   border: 5px solid black;
   border-radius: 5rem;
   padding: 1.5rem;
-  background-color: black;
-  color: #61ff00;
+  background-color: var(--accents);
+  color: var(--secondary);
   margin-bottom: 1rem;
 }
 @media (max-width: 280px) {
@@ -614,7 +671,7 @@ nav .navbar-links li:last-child a i {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: black;
+  color: var(--sub-header);
   font-size: 1rem;
 }
 @media (max-width: 800px) {
@@ -635,7 +692,7 @@ nav .navbar-links li:last-child a i {
 .services {
   scroll-margin-top: 10vh;
   margin-top: 10rem;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--header);
 }
 @media screen and (max-width: 768px) {
   .services {
@@ -648,7 +705,7 @@ nav .navbar-links li:last-child a i {
   width: 100%;
 }
 .services .services-content__title {
-  color: black;
+  color: var(--header);
   font-size: 4rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -677,7 +734,7 @@ nav .navbar-links li:last-child a i {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-top: 2px solid black;
+  border-top: 2px solid var(--header);
   max-height: 30rem;
   width: 100%;
 }
@@ -686,14 +743,14 @@ nav .navbar-links li:last-child a i {
   justify-content: flex-end;
   align-items: flex-end;
   font-size: 1.25rem;
-  color: black;
+  color: var(--header);
 }
 .services .services-content__list article .service-btn-container a {
   padding: 2rem 3rem;
-  border: 2px solid black;
+  border: 2px solid var(--header);
   text-decoration: none;
-  color: #61ff00;
-  background-color: black;
+  color: var(--secondary);
+  background-color: var(--accents);
   margin-bottom: 2rem;
   transition: background-color 0.3s ease;
   transition: border-color 0.3s ease;
@@ -701,7 +758,7 @@ nav .navbar-links li:last-child a i {
 .services .services-content__list article .service-btn-container a:hover {
   background-color: transparent;
   border-color: black;
-  color: black;
+  color: var(--hover-text);
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
@@ -716,7 +773,7 @@ nav .navbar-links li:last-child a i {
   flex-direction: column;
 }
 .service-info h3 {
-  color: black;
+  color: var(--header);
   font-size: 3rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -731,7 +788,7 @@ nav .navbar-links li:last-child a i {
   }
 }
 .service-info h4 {
-  color: black;
+  color: var(--paragraph);
   font-size: 2.5rem;
 }
 @media screen and (max-width: 768px) {
@@ -818,7 +875,7 @@ nav .navbar-links li:last-child a i {
 
 .call-to-action {
   scroll-margin-top: 10vh;
-  background: #61ff00;
+  background: var(--background);
   padding: 15rem 0;
 }
 .call-to-action__content {
@@ -827,7 +884,7 @@ nav .navbar-links li:last-child a i {
   gap: 5rem;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: var(--header);
   font-size: 3rem;
   display: flex;
   width: 100%;
@@ -853,8 +910,8 @@ nav .navbar-links li:last-child a i {
   }
 }
 .call-to-action__content h2:hover {
-  background-color: black;
-  color: #61ff00;
+  background-color: var(--accents);
+  color: var(--secondary);
 }
 .call-to-action__content .description {
   display: flex;
@@ -869,7 +926,7 @@ nav .navbar-links li:last-child a i {
   }
 }
 .call-to-action__content p {
-  color: black;
+  color: var(--paragraph);
   font-size: 1.5rem;
   line-height: 1.75;
   margin-bottom: 1;
@@ -881,7 +938,7 @@ nav .navbar-links li:last-child a i {
 }
 .call-to-action__content a {
   text-decoration: none;
-  color: black;
+  color: var(--header);
 }
 .call-to-action__content a h2 {
   width: 100%;
@@ -889,9 +946,9 @@ nav .navbar-links li:last-child a i {
 .call-to-action__content .work-with-me {
   padding: 1.5rem 2.5rem;
   border-radius: 5rem;
-  border: 2px solid black;
-  color: black;
-  background-color: #61ff00;
+  border: 2px solid var(--header);
+  color: var(--header);
+  background-color: var(--secondary);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.75);
   text-decoration: none;
   font-size: 4rem;
@@ -910,8 +967,8 @@ nav .navbar-links li:last-child a i {
 }
 .call-to-action__content a:hover {
   background: transparent;
-  border: 2px solid black;
-  color: black;
+  border: 2px solid var(--paragraph);
+  color: var(--header);
 }
 
 .footer {
@@ -934,12 +991,12 @@ nav .navbar-links li:last-child a i {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: black;
+  color: var(--header);
   font-size: 1.2rem;
 }
 .footer-content h4 {
-  background-color: black;
-  color: #61ff00;
+  background-color: var(--accents);
+  color: var(--secondary);
   z-index: 20;
 }
 @media screen and (max-width: 768px) {
@@ -949,6 +1006,8 @@ nav .navbar-links li:last-child a i {
 }
 .footer-content p {
   margin: 0;
+  color: #fff;
+  z-index: 10;
 }
 @media screen and (max-width: 1250px) {
   .footer-content p {
@@ -956,7 +1015,7 @@ nav .navbar-links li:last-child a i {
   }
 }
 .footer-content p span {
-  color: black;
+  color: var(--highlight);
 }
 @media screen and (max-width: 768px) {
   .footer-content p {
@@ -964,6 +1023,7 @@ nav .navbar-links li:last-child a i {
   }
 }
 .footer-content .triple-h-footer-img {
+  display: none;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -985,12 +1045,36 @@ nav .navbar-links li:last-child a i {
     width: 20rem;
   }
 }
+.footer-content .goku-black-footer-img {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  overflow: hidden;
+}
+@media screen and (max-width: 1500px) {
+  .footer-content .goku-black-footer-img {
+    width: 50rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .footer-content .goku-black-footer-img {
+    width: 20rem;
+  }
+}
+.footer-content .active-image {
+  display: block; /* Display the image */
+}
+.footer-content .inactive-image {
+  display: none; /* Hide the image */
+}
 
 .frontend-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2.5rem;
-  color: black;
+  color: var(--header);
 }
 @media screen and (max-width: 768px) {
   .frontend-content {
@@ -1005,7 +1089,7 @@ nav .navbar-links li:last-child a i {
 }
 
 .frontend-col-left .frontend-header {
-  color: black;
+  color: var(--header);
   margin-bottom: 4rem;
 }
 .frontend-col-left .frontend-header h2 {
@@ -1023,13 +1107,13 @@ nav .navbar-links li:last-child a i {
 }
 .frontend-col-left .frontend-pack-description p {
   font-size: 1.5rem;
-  color: black;
+  color: var(--paragraph);
   margin-bottom: 1.5rem;
 }
 .frontend-col-left li {
   font-size: 1.5rem;
   list-style: none;
-  color: black;
+  color: var(--paragraph);
   margin-bottom: 1.5rem;
 }
 .frontend-col-left li i {
@@ -1045,8 +1129,8 @@ nav .navbar-links li:last-child a i {
   gap: 5rem;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid var(--paragraph);
+  border-bottom: 1px solid var(--paragraph);
   font-size: 2rem;
   font-weight: 200;
   margin-bottom: 5rem;
@@ -1054,8 +1138,8 @@ nav .navbar-links li:last-child a i {
 .frontend-col-left .frontend-call-to-action-content a {
   padding: 1.5rem 7rem;
   border-radius: 3rem;
-  border: 2px solid black;
-  color: black;
+  border: 2px solid var(--header);
+  color: var(--header);
   text-decoration: none;
   font-size: 1.75rem;
   letter-spacing: 0.3rem;
@@ -1064,9 +1148,9 @@ nav .navbar-links li:last-child a i {
   margin-bottom: 2rem;
 }
 .frontend-col-left .frontend-call-to-action-content a:hover {
-  background: black;
+  background: var(--highlight);
   color: #fff;
-  border: 2px solid black;
+  border: 2px solid var(--paragraph);
 }
 @media screen and (max-width: 768px) {
   .frontend-col-left .frontend-call-to-action-content {
@@ -1078,7 +1162,7 @@ nav .navbar-links li:last-child a i {
   margin-bottom: 2rem;
 }
 .frontend-col-left .frontend-more-services-content article {
-  border: 1px solid black;
+  border: 1px solid var(--header);
   border-radius: 1.7rem;
 }
 .frontend-col-left .frontend-more-service-info {
@@ -1089,7 +1173,7 @@ nav .navbar-links li:last-child a i {
   text-align: center;
 }
 .frontend-col-left .frontend-more-service-info h3 {
-  color: black;
+  color: var(--header);
   font-size: 2rem;
   margin-top: 2rem;
 }
@@ -1097,7 +1181,7 @@ nav .navbar-links li:last-child a i {
   font-size: 1.5rem;
 }
 .frontend-col-left .frontend-more-service-info h4 {
-  color: black;
+  color: var(--paragraph);
   font-size: 1.2rem;
 }
 .frontend-col-left .frontend-more-service-info .frontend-more-service-icons {
@@ -1213,22 +1297,22 @@ nav .navbar-links li:last-child a i {
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-  color: black;
+  color: var(--header);
 }
 .frontend-more-service .frontend-more-service-btn-container a {
   padding: 2rem 3rem;
   border-radius: 3rem;
-  border: 2px solid black;
+  border: 2px solid var(--header);
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-decoration: none;
-  color: black;
+  color: var(--header);
   transition: background-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
 .frontend-more-service .frontend-more-service-btn-container a:hover {
-  background-color: #61ff00;
-  border-color: #242629;
+  background-color: var(--secondary);
+  border-color: var(--paragraph);
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
@@ -1240,7 +1324,7 @@ nav .navbar-links li:last-child a i {
 
 .frontend-col-right .frontend-info-container {
   height: 75rem;
-  border: solid 1px black;
+  border: solid 1px var(--header);
   border-radius: 1.7rem;
   display: flex;
   flex-direction: column;
@@ -1261,7 +1345,7 @@ nav .navbar-links li:last-child a i {
   text-align: center;
   font-size: 1.75rem;
   font-weight: 300;
-  color: black;
+  color: var(--paragraph);
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -1273,13 +1357,13 @@ nav .navbar-links li:last-child a i {
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-  color: black;
+  color: var(--header);
 }
 .frontend-col-right .frontend-info-container .frontend-center-info .frontend-contact-me-btn a {
-  color: black;
+  color: var(--header);
   padding: 2rem 3rem;
   border-radius: 3rem;
-  border: 2px solid black;
+  border: 2px solid var(--header);
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-decoration: none;
@@ -1287,8 +1371,8 @@ nav .navbar-links li:last-child a i {
   transition: border-color 0.3s ease;
 }
 .frontend-col-right .frontend-info-container .frontend-center-info .frontend-contact-me-btn a:hover {
-  background-color: #61ff00;
-  border-color: black;
+  background-color: var(--secondary);
+  border-color: var(--paragraph);
   cursor: pointer;
 }
 .frontend-col-right .frontend-info-container h4 {
@@ -1297,7 +1381,7 @@ nav .navbar-links li:last-child a i {
 }
 .frontend-col-right .frontend-info-container p {
   font-size: 1.5rem;
-  color: black;
+  color: var(--paragraph);
 }
 @media screen and (max-width: 768px) {
   .frontend-col-right .frontend-info-container {
@@ -1385,7 +1469,7 @@ nav .navbar-links li:last-child a i {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2.5rem;
-  color: black;
+  color: var(--header);
 }
 @media screen and (max-width: 768px) {
   .fullstack-content {
@@ -1400,7 +1484,7 @@ nav .navbar-links li:last-child a i {
 }
 
 .col-left .header {
-  color: black;
+  color: var(--header);
   margin-bottom: 4rem;
 }
 .col-left .header h2 {
@@ -1418,13 +1502,13 @@ nav .navbar-links li:last-child a i {
 }
 .col-left .pack-description p {
   font-size: 1.5rem;
-  color: black;
+  color: var(--paragraph);
   margin-bottom: 1.5rem;
 }
 .col-left li {
   font-size: 1.5rem;
   list-style: none;
-  color: black;
+  color: var(--paragraph);
   margin-bottom: 1.5rem;
 }
 .col-left li i {
@@ -1440,8 +1524,8 @@ nav .navbar-links li:last-child a i {
   gap: 5rem;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid var(--paragraph);
+  border-bottom: 1px solid var(--paragraph);
   font-size: 2rem;
   font-weight: 200;
   margin-bottom: 5rem;
@@ -1449,8 +1533,8 @@ nav .navbar-links li:last-child a i {
 .col-left .call-to-action-content a {
   padding: 1.5rem 7rem;
   border-radius: 3rem;
-  border: 2px solid black;
-  color: black;
+  border: 2px solid var(--header);
+  color: var(--header);
   text-decoration: none;
   font-size: 1.75rem;
   letter-spacing: 0.3rem;
@@ -1459,8 +1543,9 @@ nav .navbar-links li:last-child a i {
   margin-bottom: 2rem;
 }
 .col-left .call-to-action-content a:hover {
-  background: #61ff00;
-  border: 2px solid black;
+  background: var(--highlight);
+  color: #fff;
+  border: 2px solid var(--paragraph);
 }
 @media screen and (max-width: 768px) {
   .col-left .call-to-action-content {
@@ -1472,7 +1557,7 @@ nav .navbar-links li:last-child a i {
   margin-bottom: 2rem;
 }
 .col-left .more-services-content article {
-  border: 1px solid black;
+  border: 1px solid var(--header);
   border-radius: 1.7rem;
 }
 .col-left .more-service-info {
@@ -1483,7 +1568,7 @@ nav .navbar-links li:last-child a i {
   text-align: center;
 }
 .col-left .more-service-info h3 {
-  color: black;
+  color: var(--header);
   font-size: 2rem;
   margin-top: 2rem;
 }
@@ -1491,7 +1576,7 @@ nav .navbar-links li:last-child a i {
   font-size: 1.5rem;
 }
 .col-left .more-service-info h4 {
-  color: black;
+  color: var(--paragraph);
   font-size: 1.2rem;
 }
 .col-left .more-service-info .more-service-icons {
@@ -1576,22 +1661,22 @@ nav .navbar-links li:last-child a i {
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-  color: black;
+  color: var(--header);
 }
 .more-service .more-service-btn-container a {
   padding: 2rem 3rem;
   border-radius: 3rem;
-  border: 2px solid black;
+  border: 2px solid var(--header);
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-decoration: none;
-  color: black;
+  color: var(--header);
   transition: background-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
 .more-service .more-service-btn-container a:hover {
-  background-color: #61ff00;
-  border-color: #242629;
+  background-color: var(--secondary);
+  border-color: var(--paragraph);
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
@@ -1603,7 +1688,7 @@ nav .navbar-links li:last-child a i {
 
 .col-right .info-container {
   height: 75rem;
-  border: solid 1px black;
+  border: solid 1px var(--header);
   border-radius: 1.7rem;
   display: flex;
   flex-direction: column;
@@ -1624,7 +1709,7 @@ nav .navbar-links li:last-child a i {
   text-align: center;
   font-size: 1.75rem;
   font-weight: 300;
-  color: black;
+  color: var(--paragraph);
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -1636,13 +1721,13 @@ nav .navbar-links li:last-child a i {
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-  color: black;
+  color: var(--header);
 }
 .col-right .info-container .center-info .contact-me-btn a {
-  color: black;
+  color: var(--header);
   padding: 2rem 3rem;
   border-radius: 3rem;
-  border: 2px solid black;
+  border: 2px solid var(--header);
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-decoration: none;
@@ -1650,8 +1735,8 @@ nav .navbar-links li:last-child a i {
   transition: border-color 0.3s ease;
 }
 .col-right .info-container .center-info .contact-me-btn a:hover {
-  background-color: #61ff00;
-  border-color: black;
+  background-color: var(--secondary);
+  border-color: var(--paragraph);
   cursor: pointer;
 }
 .col-right .info-container h4 {
@@ -1660,7 +1745,7 @@ nav .navbar-links li:last-child a i {
 }
 .col-right .info-container p {
   font-size: 1.5rem;
-  color: black;
+  color: var(--paragraph);
 }
 @media screen and (max-width: 768px) {
   .col-right .info-container {
@@ -1764,7 +1849,7 @@ nav .navbar-links li:last-child a i {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: black;
+  background-color: var(--paragraph);
   color: #fff;
   width: 40px;
   height: 40px;
@@ -1776,11 +1861,12 @@ nav .navbar-links li:last-child a i {
   cursor: pointer;
   opacity: 0.6;
   transition: opacity 0.3s ease;
+  z-index: 10;
 }
 
 .scroll-to-top-button:hover {
-  background-color: black;
-  color: #61ff00;
+  background-color: var(--header);
+  color: var(--background);
 }
 
 /*# sourceMappingURL=styles.css.map */

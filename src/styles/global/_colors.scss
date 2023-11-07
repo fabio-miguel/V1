@@ -1,26 +1,19 @@
-// background colors
-$bg-gray: #f8f8f8;
-$bg-white: #ffffff;
+:root {
+  // background colors
+  --background: #61ff00;
+  --bg-white: #fff;
+  --header: black;
+  --sub-header: black;
+  --paragraph: black;
+  --button-bg: #61ff00;
+  --button-text: black;
+  --link: #f9bc60;
 
-// text color
-$text-black: #010103;
-$text-orange: #ff4d30;
-$btn-black: #161616;
-$text-gray: #706f7b;
-
-// theme
-// $background: #16161a;
-$background: #61ff00;
-
-$header: black;
-$sub-header: black;
-$paragraph: black;
-$button: #f9bc60;
-$button-text: #fff;
-$link: #f9bc60;
-
-$card-background: #242629;
-$card-header: #fffffe;
-$card-paragraph: #94a1b2;
-$highlight: black;
-$secondary: #61ff00;
+  --card-background: #242629;
+  --card-header: #fffffe;
+  --card-paragraph: #94a1b2;
+  --highlight: black;
+  --secondary: #61ff00;
+  --accents: black;
+  --hover-text: black;
+}

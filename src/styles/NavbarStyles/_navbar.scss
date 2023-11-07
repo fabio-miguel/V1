@@ -2,7 +2,7 @@
 
 nav {
   align-items: center;
-  background-color: $background;
+  background-color: var(--background);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   display: flex;
   font-size: 1.9rem;
@@ -19,6 +19,8 @@ nav {
   .logo-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    border: 4px solid var(--accents);
     width: 75px;
     height: 75px;
     transition: all 0.8s;
@@ -42,20 +44,47 @@ nav {
   img {
     width: 5rem;
   }
+  .color-mode-btn-container {
+    position: absolute;
+    top: -4%;
+    left: 30%;
+    width: 10rem;
+  }
+  .color-mode-btn {
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--accents);
+    }
+  }
 
   .navbar-links {
     display: flex;
     gap: 2.5rem;
     list-style: none;
+
     a {
-      color: $header;
+      color: var(--header);
       font-weight: 700;
       text-decoration: none;
       transition: all 0.21s;
     }
     a:hover {
-      color: black;
+      color: var(--hover-text);
     }
+
     li:first-child a:hover {
       text-decoration: underline;
     }
@@ -66,21 +95,21 @@ nav {
       text-decoration: underline;
     }
     li:last-child a {
-      background: $highlight;
-      color: $secondary;
+      background: var(--accents);
+      color: var(--secondary);
       padding: 1rem 2rem;
       // border-radius: 3rem;
       border: 5px solid black;
     }
     li:last-child a:hover {
       background: transparent;
-      color: $highlight;
+      color: var(--accents);
       i {
-        color: $highlight;
+        color: var(--accents);
       }
     }
     li:last-child a i {
-      color: $secondary;
+      color: var(--secondary);
     }
     @media (max-width: 1000px) {
       display: none;
@@ -95,9 +124,9 @@ nav {
   display: none;
   cursor: pointer;
   transition: all 0.3s;
-  color: $highlight;
+  color: var(--accents);
   &:hover {
-    color: $header;
+    color: var(--header);
   }
 
   @media (max-width: 1000px) {
@@ -113,7 +142,7 @@ nav {
   position: fixed;
   top: 0;
   left: -100%;
-  background-color: $bg-white;
+  background-color: var(--bg-white);
   z-index: 999999;
   justify-content: center;
   align-items: center;
@@ -128,7 +157,7 @@ nav {
     transition: all 0.3s;
 
     &:hover {
-      color: $highlight;
+      color: var(--secondary);
     }
   }
 
@@ -143,12 +172,12 @@ nav {
     li {
       a {
         text-decoration: none;
-        color: $text-black;
+        color: var(--text-black);
         font-weight: 500;
         transition: all 0.3s;
 
         &:hover {
-          color: $paragraph;
+          color: var(--hover-text);
         }
       }
     }
@@ -157,4 +186,12 @@ nav {
 
 .open-nav {
   left: 0;
+}
+
+.pink-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accents);
+  border-radius: 100%;
 }
