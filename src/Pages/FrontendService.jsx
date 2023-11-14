@@ -24,33 +24,44 @@ const FrontendService = () => {
                   A flexible service I provide tailored to implement design
                   requirements for your website. Whether this is coding the
                   entire design from scratch or I go into the platform you are
-                  using, such as Wix, Squarespace, Cargo... and customise the
-                  design to your needs with custom code.
+                  using, such as Wix, Squarespace, Cargo, Shopify... and
+                  customise the design to your needs with custom code.
+                </p>
+
+                <p>
+                  I have experience in practically all the major e-commerce
+                  platforms. I am specialised in Shopify development and can
+                  integrate Liquid programming to your theme or create an
+                  entirely new theme for your site!{" "}
+                  <Link to={"/shopify-theme-development"}>
+                    View Shopify Theme Development Service.{" "}
+                  </Link>
                 </p>
 
                 <p>
                   We will discuss your needs, I provide a timeframe and we get
-                  to work. Of course, The timeframe depends on the complexity of
-                  the task and the amount of tasks. It could be a half-day, a
-                  couple days or a week or so. Again, it depends on what you
-                  want. The time and fixed cost will be agreed before the
-                  project starts.
+                  to work. Of course, the timeframe depends on the complexity
+                  and amount of tasks. It could be a half-day, a couple days or
+                  a week or so. Again, it depends on what you want. The duration
+                  and fixed cost of the project will be agreed before project
+                  start.
                 </p>
 
                 <p>
                   Clients usually request this service when they want to
-                  integrate a piece of specific functionality to their current
-                  site or they want to adapt the template they are using to give
-                  their website more of a unique feel. This service is subject
-                  to availability as my time tends to be occupied with big
-                  projects.
+                  integrate specific functionality to their current site or they
+                  want to adapt the template they are using to give their
+                  website more of a unique UI/UX. This service is subject to
+                  availaibility depending on the scale of the project as my time
+                  naturally tends to be occupied with larger scale projects. Get
+                  in touch and we can discuss your project.
                 </p>
 
                 <h4>THE PROCESS</h4>
                 <ul>
                   <li>
                     <i class="fa-solid fa-caret-right"></i>
-                    1-1 Call
+                    1-1 Call (Google Meet)
                   </li>
                   <li>
                     <i class="fa-solid fa-caret-right"></i>
@@ -62,14 +73,14 @@ const FrontendService = () => {
                   </li>
                   <li>
                     <i class="fa-solid fa-caret-right"></i>Agreed Timeframe &
-                    fixed cost
+                    Fixed Cost
                   </li>
                   <li>
-                    <i class="fa-solid fa-caret-right"></i>Relevant progress
-                    updates
+                    <i class="fa-solid fa-caret-right"></i>Relevant Progress
+                    Updates
                   </li>
                   <li>
-                    <i class="fa-solid fa-caret-right"></i>Completion & handover
+                    <i class="fa-solid fa-caret-right"></i>Completion & Handover
                   </li>
                 </ul>
               </div>

@@ -5,6 +5,7 @@ import htmlImgGrey from "../images/services/greyIcons/htmlImgGrey.png";
 import javascriptImgGrey from "../images/services/greyIcons/javascriptImgGrey.png";
 import remixImgGrey from "../images/services/greyIcons/remixImgGrey.png";
 import sanityImgGrey from "../images/services/greyIcons/sanityImgGrey.png";
+import liquidImgGrey from "../images/services/greyIcons/liquidshopifyImgGrey.png";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -43,6 +44,42 @@ const Services = () => {
                 </div>
                 <div className="service-btn-container">
                   <Link smooth to="/frontend">
+                    VIEW SERVICE
+                  </Link>
+                </div>
+              </article>
+
+              <article className="service">
+                <div className="service-info">
+                  <h3>SHOPIFY THEME DEVELOPMENT</h3>
+
+                  <div className="service-icons">
+                    <h4>Tech| </h4>
+                    <img
+                      className="react-img"
+                      src={shopifyImgGrey}
+                      alt="shopify-icon"
+                    />
+                    <img
+                      className="react-img"
+                      src={liquidImgGrey}
+                      alt="shopify-liquid-icon"
+                    />
+                    <img
+                      className="javascript-img"
+                      src={javascriptImgGrey}
+                      alt="javascript-icon"
+                    />
+                    <img
+                      className="html-img"
+                      src={htmlImgGrey}
+                      alt="html-icon"
+                    />
+                    <img className="css-img" src={cssImgGrey} alt="css-icon" />
+                  </div>
+                </div>
+                <div className="service-btn-container">
+                  <Link smooth to="/shopify-theme-development">
                     VIEW SERVICE
                   </Link>
                 </div>
