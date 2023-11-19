@@ -6,7 +6,7 @@
   height: 30vh;
   position: relative;
   width: 100%;
-  border-bottom: 5px solid var(--header);
+  border-bottom: 8px solid var(--border-section);
   @media (max-width: 900px) {
     height: 35vh;
   }
@@ -28,7 +28,7 @@
       color: var(--header);
       font-size: 6rem;
       // font-style: italic;
-      font-weight: 800;
+      font-weight: 900;
       padding-bottom: 2rem;
       span {
         font-style: italic;
@@ -45,7 +45,8 @@
     & h2 {
       color: var(--sub-header);
       font-size: 2.5rem;
-      font-weight: 600;
+      font-weight: 400;
+      text-transform: uppercase;
       @media (max-width: 900px) {
         font-size: 1.5rem;
       }
@@ -199,4 +200,51 @@
 
 .hide-decagram {
   display: none;
+}
+
+.goku-black-ss-rose-container {
+  position: relative;
+
+  .goku-black-ss-rose {
+    border-radius: 50%;
+    position: relative;
+    @media (max-width: 1000px) {
+      width: 80%;
+    }
+  }
+  div {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 3rem;
+
+    border-radius: 30px;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
+    z-index: 2;
+
+    // Styles to create a slanted speech bubble arrow
+    &::before {
+      content: "";
+      position: absolute;
+      border-style: solid;
+      border-width: 20px 60px 15px 0; // Adjust the width and height of the arrow
+      border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+      top: 50%;
+      right: 100%;
+      transform: translateY(-50%);
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+}
+
+.mm {
+  width: 150px;
 }

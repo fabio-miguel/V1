@@ -2,11 +2,11 @@
 
 .projects {
   scroll-margin-top: 10vh;
-  border-bottom: 5px solid var(--header);
+  border-bottom: 8px solid var(--border-section);
   h1 {
     font-size: 5rem;
     letter-spacing: -0.5rem;
-    font-weight: 700;
+    font-weight: 500;
     transform: skewY(-15deg);
     display: inline-block;
     z-index: 5;

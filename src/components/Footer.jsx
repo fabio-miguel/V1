@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import tripleHDXGreen from "../images/contact/triple_h_dx_green_cut_out.png";
+import mm from "../images/footer/mm.png";
 import gokuBlack from "../images/contact/goku_black.png";
 import { useLocation } from "react-router-dom";
 import { useToggle } from "../components/ToggleContext";
@@ -33,10 +33,10 @@ const Footer = () => {
             {location.pathname === homePagePath && (
               <>
                 <img
-                  className={`triple-h-footer-img ${
+                  className={`mm-footer-img ${
                     isToggled ? "inactive-image" : "active-image"
                   }`}
-                  src={tripleHDXGreen}
+                  src={mm}
                   alt="triple h dx"
                 />
                 <img

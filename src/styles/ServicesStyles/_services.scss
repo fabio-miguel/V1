@@ -3,7 +3,7 @@
 .services {
   scroll-margin-top: 10vh;
   margin-top: 10rem;
-  border-bottom: 5px solid var(--header);
+  border-bottom: 8px solid var(--border-section);
 
   @media screen and (max-width: 768px) {
     margin-top: 5rem;

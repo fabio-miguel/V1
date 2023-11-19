@@ -2,7 +2,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useToggle } from "../components/ToggleContext";
-import hammer from "../images/navbar/hammer2.jpg";
+import eye from "../images/navbar/eye.png";
 import potara from "../images/navbar/potara_earring.png";
 
 const Navbar = () => {
@@ -28,6 +28,8 @@ const Navbar = () => {
     if (!isToggled) {
       // Change the variables to one set of colors with a transition
       root.style.setProperty("--background", "black");
+      root.style.setProperty("--navbar", "black");
+      root.style.setProperty("--border-section", "#f23895");
       root.style.setProperty("--header", "#f23895");
       root.style.setProperty("--sub-header", "#ffaed3");
       root.style.setProperty("--paragraph", "#ffaed3");
@@ -36,7 +38,7 @@ const Navbar = () => {
       root.style.setProperty("--link", "yellow");
       root.style.setProperty("--card-background", "darkred");
       root.style.setProperty("--card-header", "pink");
-      root.style.setProperty("--card-paragraph", "#f23895");
+      root.style.setProperty("--card-paragraph", "#61ff00");
       root.style.setProperty("--highlight", "green");
       root.style.setProperty("--secondary", "black");
       root.style.setProperty("--accents", "#f23895");
@@ -44,7 +46,9 @@ const Navbar = () => {
       // Add more variable updates as needed
     } else {
       // Change the variables to another set of colors with a transition
-      root.style.setProperty("--background", "#61ff00");
+      root.style.setProperty("--background", "#f2f7f5");
+      root.style.setProperty("--navbar", "#61ff00");
+      root.style.setProperty("--border-section", "#61ff00");
       root.style.setProperty("--header", "black");
       root.style.setProperty("--sub-header", "black");
       root.style.setProperty("--paragraph", "black");
@@ -108,11 +112,11 @@ const Navbar = () => {
         <div className={`logo-container ${isToggled ? "pink-background" : ""}`}>
           {isHomePage ? (
             <Link smooth to="/#hero">
-              <img src={hammer} alt="fabio miguel hammer logo" />
+              <img src={eye} alt="fabio miguel eye logo" />
             </Link>
           ) : (
             <Link to="/">
-              <img src={hammer} alt="fabio miguel hammer logo" />
+              <img src={eye} alt="fabio miguel eye logo" />
             </Link>
           )}
         </div>

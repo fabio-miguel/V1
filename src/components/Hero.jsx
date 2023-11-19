@@ -1,7 +1,9 @@
 import decagram from "../images/hero/decagram.png";
+import goku from "../images/hero/goku.gif";
 import { useToggle } from "../components/ToggleContext";
 const Hero = () => {
   const { isToggled } = useToggle();
+
   return (
     <>
       <section id="hero" className="hero">
@@ -11,11 +13,11 @@ const Hero = () => {
               <div className="hero-content__text">
                 <div className="hero-content__text__title">
                   <h1>
-                    FABIO <span> MIGUEL</span>
+                    FABIO <span> MIGUEL!</span>
                   </h1>
                   <h2>Creative Web Engineer</h2>
                   <h2>
-                    Specialising in Javascript, React, RemixJS, Shopify & API
+                    Specialising in JavaScript, React, Remix.js, Shopify & API
                     CMS systems
                   </h2>
                 </div>
@@ -37,6 +39,17 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
+
+                {isToggled && (
+                  <div className="goku-black-ss-rose-container">
+                    <img
+                      src={goku}
+                      alt="Goku Black SS Rose"
+                      className="goku-black-ss-rose"
+                    />
+                    <div>"LEVEL UP!"</div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
